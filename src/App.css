@@ -1,5 +1,31 @@
 .App {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  background: url('Garage2.png') no-repeat center center fixed;
+  -webkit-background-size: fill;
+  -moz-background-size: fill;
+  -o-background-size: fill;
+  background-size: fill;
+}
+
+.container {
+ 
+
+  margin:auto;
+	padding: 0;
+	margin: 0;
+	display: flex;
+  align-items: center;
+  /* flex-wrap: wrap;
+  flex-direction: column; */
+	justify-content: space-around;
+  overflow: hidden;
+  height:100vh;
 }
 
 .App-logo {
