@@ -18,14 +18,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   text-align: left;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
-
+  
 }
+
+
+$bgCol: #01080e;
 
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #faf7eb;
-    color: #214261;
+    color: $bgCol;
     /* font-family: "GT Walsheim", sans-serif; */
     padding: 32px;
     
@@ -49,18 +52,18 @@ p {
 
 .button {
   text-transform: uppercase;
-  font: bold 18px spartan, sans-serif;
+  font: 500 20px spartan, sans-serif;
   letter-spacing: .08em;
 
   background: #dbbd7f;
   border: none;
-  border-radius: 100px;
-  color: #214261;
+  border-radius: 2px;
+  color: $bgCol;
 
   outline: none;
   padding: 16px 24px 16px 24px;
   padding-bottom:10px;
-  max-width: 320px;
+  /* max-width: 210px; */
   width: 100%;
   cursor: pointer;
   line-height: 2.1em;

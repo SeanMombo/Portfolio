@@ -1,16 +1,20 @@
+$bgCol: #01080e;
+
+
 .main-banner {
     border-radius:4px;
-    background: #020d16  no-repeat;
+    background: $bgCol  no-repeat;
     // background: #214261 url('../../img/main-banner-bg@2x.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 56px 6.39535% 88px;
+    padding: 56px 9.39535% 64px;
     position: relative;
     text-align: center;
 
     header {
         align-items: center;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         margin-bottom: 32px;
         position: relative;
@@ -25,27 +29,30 @@
         }
 
         h1 {
-            font: 800 22px 'Spartan', sans-serif;
-            color: #dbbd7f;
-        }
+            font: 100 22px 'Solway', serif;
+            font: 200 40px 'Spartan', sans-serif;
 
+            color: #faf7eb;
+        }
+        
         .logo-container {
+
             width: 150px;
             height: 150px;
-            
+       
+            h1 {
+                transform:translate(0, -40px);
+            }
 
             svg {
-                width: 250px;
+                width: 520px;
                 position: absolute;
                 left: 50%;
-                margin-left: -128px;
+                margin-left: -255px;
                 margin-top: -140px;
             }
         }
     }
-
-
-
 
     .main-banner-content {
         margin: 0 auto;
@@ -56,14 +63,20 @@
 
         h1 {
             color: #faf7eb;
-            font: 200 44px 'Solway', serif;
+            font: 200 54px 'Solway', serif;
             letter-spacing: 0.03em;
             line-height: 1.2727272727em;
             margin-bottom: 24px;
 
-            span {
-                // font: 200 28px 'Spartan', sans-serif;
-                font: 200 22px 'Solway', serif;
+            .span1 {
+                font: 400 16px 'Spartan', sans-serif;
+                // font: 200 22px 'Solway', serif;
+                
+            }
+            .span2 {
+                font: 200 40px 'Spartan', sans-serif;
+                // font: 200 22px 'Solway', serif;
+            
             }
         }
 
@@ -71,20 +84,50 @@
             font: 400 20px 'Spartan', sans-serif;
             color: #dbbd7f;
             margin: 0 auto 64px auto;
-            // width: 83.33333333%;
-            line-height: 1.4545454545em; 
+            width: 63.33333333%;
             
+            line-height: 1.4545454545em; 
+            // text-align:left;
+        }
+
+      
+    }
+    hr {
+        color: #faf7eb;
+        border-top:0px;
+        border-style: dashed;
+        
+        opacity: 0.3;
+    }
+    .social-container {
+        display:flex;
+        justify-content: space-around;
+        // flex-direction: column;
+        width:80%;
+        margin: 0 auto;
+        margin-top:8px;
+        .small {
+            max-width:120px;
         }
     }
 
-    .button {
-        background: #faf7eb;
-        color: #214261;
-        z-index: 1;
-        position: relative;
-        display: block;
-        margin: 0 auto;
 
-    }
+    // .button {
+    //     // background: #faf7eb;
+    //     background: none;
+    //     // color: #020d16;
+    //     color: #faf7eb;
+    //     // border: 1px #faf7eb solid;
+    //     z-index: 1;
+    //     position: relative;
+    //     display: block;
+    //     margin: 0 auto;
+
+    //     svg {
+    //         width:32px;
+    //         height:32px;
+            
+    //     }
+    // }
 
 }

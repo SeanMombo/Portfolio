@@ -1,0 +1,32 @@
+.custom-button {
+    
+        .button {
+        // background: #faf7eb;
+        background: none;
+        // color: #020d16;
+        color: #faf7eb;
+        min-width:200px;
+        max-height:72px;
+        z-index: 1;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        // padding: 16px 24px 16px 24px;
+        // border: 1px rgba(255, 255, 255, 1) solid;
+        // border-right:none; border-left:none;
+        // border-radius:26px;
+        svg {
+            width:32px;
+            height:32px; 
+        }
+
+        font-weight:600;
+        &:hover {
+            // background:2px rgb(235, 189, 121);
+            // border: 2px rgba(235, 189, 121, 0.75) solid;
+            // color: #020d16 !important;
+        }
+    }
+}
+
+
