@@ -1,0 +1,28 @@
+$bgCol: #070b14;
+
+.about-page {
+    display: flex;
+
+    .bio-container {
+        background-color: #dbbd7f;
+        // background-image: url(img/description-moon-small.png);
+        background-position: left top;
+        background-size: auto auto;
+        background-repeat: no-repeat;
+        display: flex;  
+        margin: 32px 16px 0 0;
+        padding: 88px 6.39535%;
+        width: 49.7%;
+        position: relative;
+
+        .bio {
+            width:80%;
+        }
+
+        p {
+            margin-bottom: 64px;
+            width: 80%;
+        }
+    }
+}
+

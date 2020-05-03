@@ -1,12 +1,13 @@
 .custom-button {
-    
+   
         .button {
         // background: #faf7eb;
         background: none;
         // color: #020d16;
         color: #faf7eb;
-        min-width:200px;
-        max-height:72px;
+        // min-width:150px;
+        width:190px;
+        // max-height:72px;
         z-index: 1;
         position: relative;
         display: block;
@@ -16,6 +17,7 @@
         // border-right:none; border-left:none;
         // border-radius:26px;
         svg {
+            margin-top:8px;
             width:32px;
             height:32px; 
         }

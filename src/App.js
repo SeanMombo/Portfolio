@@ -12,7 +12,7 @@ import Intro from './components/intro/intro.component';
 
 import MainBanner from './components/main-banner/main-banner.component';
 import Navbar from './components/navbar/navbar.component'
-
+import AboutPage from './components/about-page/about-page.component'
 
 class App extends React.Component {
 //   componentDidMount() {
@@ -54,7 +54,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <MainBanner/>
-        <Navbar/>
+        <AboutPage/>
         {/* <Intro>
           
         </Intro>
