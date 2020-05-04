@@ -1,0 +1,18 @@
+$bgCol: #070b14;
+$whiteCol: #faf7eb;
+
+.navbar {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+    background-color: $bgCol;
+    padding: 16px 16px 0px;
+
+    a {
+        font-size: 16px;
+        font-weight:400;
+        color: $whiteCol;
+        padding: 16px 16px;
+    }
+    
+}

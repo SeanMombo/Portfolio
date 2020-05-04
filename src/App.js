@@ -53,8 +53,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Navbar/>
         <MainBanner/>
         <AboutPage/>
+
+        
         {/* <Intro>
           
         </Intro>

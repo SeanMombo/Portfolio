@@ -23,18 +23,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 
 $bgCol: #01080e;
-
+$whiteCol: #faf7eb;
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #faf7eb;
     color: $bgCol;
     /* font-family: "GT Walsheim", sans-serif; */
-    padding: 32px;
-    
+   
+    padding: 32px 32px;
 }
 
 a {
+    font: 400 22px spartan, sans-serif;
+    
     text-decoration: none;
     color: #dbbd7f;
 }
@@ -47,6 +49,7 @@ h1 {
 }
 
 p {
+  font: 400 22px spartan, sans-serif;
   font-size: 22px;
   line-height: 1.4545454545em; 
 }
@@ -69,4 +72,14 @@ p {
   cursor: pointer;
   line-height: 2.1em;
   text-align: center;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
 }

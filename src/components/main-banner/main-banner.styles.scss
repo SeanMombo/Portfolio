@@ -2,18 +2,31 @@ $bgCol: #070b14;
 
 
 .main-banner {
-    // // border-radius:4px;
-    // border-top-left-radius: 2500px;
-    // border-top-right-radius: 2500px;
     background: $bgCol  no-repeat;
     // background: #214261 url('../../img/main-banner-bg@2x.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 32px 9.39535% 64px;
+    // padding: 32px 9.39535% 64px;
+    padding: 0px 9.39535% 64px;
     position: relative;
     text-align: center;
+    transform:translateY(-22px);
+    z-index:-1;
+    .nav {
+        background: $bgCol  no-repeat;
+        position: static;
 
-
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        h1 {
+            margin-left:30px;
+            text-transform: uppercase;
+            font: 200 22px 'Spartan', sans-serif;
+            color: #faf7eb;
+        }
+    }
     header {
         align-items: center;
         display: flex;
@@ -22,6 +35,7 @@ $bgCol: #070b14;
         // margin-bottom: 32px;
         position: relative;
         z-index: 1;
+
         h1 {
             // text-align: left;
             // font: 100 70px 'Solway', serif;
@@ -30,7 +44,7 @@ $bgCol: #070b14;
     
             color: #faf7eb;
             text-align:left;
-
+            transform: translateY(-20px);
         }
         
         .contact-link {
@@ -45,11 +59,11 @@ $bgCol: #070b14;
 
             width: 150px;
             height: 150px;
-       
-
-
+    
             svg {
+                pointer-events:none;
                 width: 230px;
+                
                 position: absolute;
                 left: 50%;
                 margin-left: -115px;
@@ -61,18 +75,24 @@ $bgCol: #070b14;
     .main-banner-content {
         margin: 0 auto;
         width: 100%;
-        // max-width: 672px;
+       
+        max-width: 772px;
         position: relative;
         z-index: 10;
+        display:flex;
+        justify-content: space-around;
+        
 
         h1 {
             text-align: center;
          
             color: #faf7eb;
             font: 200 50px 'Solway', serif;
+            
+            // font: 900 40px 'Spartan', sans-serif;
             letter-spacing: 0.03em;
             line-height: 1.2727272727em;
-            margin-bottom: 24px;
+            margin-bottom: 16px;
 
             .span1 {
                 font: 400 16px 'Spartan', sans-serif;
@@ -80,7 +100,7 @@ $bgCol: #070b14;
                 
             }
             .span2 {
-                font: 200 40px 'Spartan', sans-serif;
+                font: 300 40px 'Spartan', sans-serif;
                 // font: 200 22px 'Solway', serif;
             
             }
@@ -89,33 +109,52 @@ $bgCol: #070b14;
         p {
             font: 400 20px 'Spartan', sans-serif;
             color: #dbbd7f;
-            margin: 0 auto 32px auto;
+            margin: 0 auto 40px auto;
             width: 63.33333333%;
-            
+            font-style: italic;
             line-height: 1.4545454545em; 
             // text-align:left;
         }
 
-      
+        .title-container {
+            height:100%;
+        }
+        .brackets {
+            // visibility: hidden;
+            h1 {
+                // font: 100 60px 'Spartan', sans-serif;
+                font: 300 160px 'Spartan', sans-serif;
+                // font-family: 'Lato', sans-serif;
+                transform: translateY(-20px);
+                // opacity: 1;
+            }
+        }
     }
 
     .icon-container {
+        
         display:flex;
-        justify-content: flex-end;
+        justify-content: center;
+        margin: 0 auto 32px auto;
+        
     }
     .social-icon {
-        margin:16px;
-        margin-top:16px;
+        // position:absolute;
+        // margin:16px;
+        // margin-top:16px;
         width:52px;
         height:52px;
+        
+        
     }
     
     hr {
         color: #faf7eb;
         border-top:0px;
         border-style: dashed;
-        
+        margin-bottom:32px;
         opacity: 0.3;
+        width:60%;
     }
     .social-container {
         display:flex;
@@ -124,9 +163,20 @@ $bgCol: #070b14;
         width:50%;
         margin: 0 auto;
         margin-top:8px;
+        
         .small {
             max-width:120px;
         }
+
+        // .brackets {
+        //     h1 {
+        //         color:#faf7eb;
+               
+        //         font: 600 160px 'Spartan', sans-serif;
+               
+        //         transform: translateY(-80px);
+        //     }
+        // }
     }
   
 
@@ -159,6 +209,8 @@ $bgCol: #070b14;
     width: 100%;
     height: 100%;
     z-index: 0;
+
+    
 }
 
 .big-circle {

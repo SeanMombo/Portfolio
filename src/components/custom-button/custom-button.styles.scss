@@ -1,21 +1,32 @@
 .custom-button {
    
         .button {
-        // background: #faf7eb;
-        background: none;
-        // color: #020d16;
-        color: #faf7eb;
-        // min-width:150px;
-        width:190px;
+        background: #faf7eb;
+        // background: none;
+        color: #020d16;
+        // color: #faf7eb;
+        min-width:150px;
+        // width:190px;
+        
         // max-height:72px;
         z-index: 1;
         position: relative;
         display: block;
         margin: 0 auto;
+
+
+
+        // margin-left:16px;
+        // margin-right:16px;
+
+
+
         // padding: 16px 24px 16px 24px;
         // border: 1px rgba(255, 255, 255, 1) solid;
         // border-right:none; border-left:none;
-        // border-radius:26px;
+        border-radius:200px;
+
+        overflow: hidden;
         svg {
             margin-top:8px;
             width:32px;
