@@ -1,8 +1,10 @@
+$bgCol: #01080e;
+$whiteCol: #fcf8eb;
+$OrangeCol: #F2AA4CFF;
+
 * {
   box-sizing: border-box;
   font-family: Helvetica Neue, Open Sans, Arial;
-
-
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -18,27 +20,27 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   text-align: left;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
- 
+  
 }
 
 
-$bgCol: #01080e;
-$whiteCol: #faf7eb;
+
+
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #faf7eb;
+    background: $whiteCol;
     color: $bgCol;
     /* font-family: "GT Walsheim", sans-serif; */
-   
-    padding: 32px 32px;
+    height:100vh; 
+    // padding: 16px 320px;
 }
 
 a {
     font: 400 22px spartan, sans-serif;
     
     text-decoration: none;
-    color: #dbbd7f;
+    color: $OrangeCol;
 }
 
 h1 {
@@ -59,7 +61,7 @@ p {
   font: 500 20px spartan, sans-serif;
   letter-spacing: .08em;
 
-  background: #dbbd7f;
+  background: $OrangeCol;
   border: none;
   border-radius: 2px;
   color: $bgCol;

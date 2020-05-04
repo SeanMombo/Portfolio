@@ -1,4 +1,9 @@
+$bgCol: rgb(8, 11, 15);
+$OrangeCol: #F2AA4CFF;
+$whiteCol: #fcf8eb;
 $bgCol: #070b14;
+// $bgCol: rgb(12, 11, 11);
+// $OrangeCol: #E94B3CFF;
 
 
 .main-banner {
@@ -7,11 +12,15 @@ $bgCol: #070b14;
     background-size: cover;
     background-position: center;
     // padding: 32px 9.39535% 64px;
-    padding: 0px 9.39535% 64px;
+    padding: 16px 9.39535% 64px;
     position: relative;
     text-align: center;
-    // transform:translateY(-22px);
-    
+    // transform:translateY(-22px);\
+    height: calc(100vh - 0px);
+
+
+   
+
 
     .nav {
         background: $bgCol  no-repeat;
@@ -26,7 +35,7 @@ $bgCol: #070b14;
             margin-left:30px;
             text-transform: uppercase;
             font: 200 22px 'Spartan', sans-serif;
-            color: #faf7eb;
+            color: $whiteCol;
         }
     }
     header {
@@ -44,7 +53,7 @@ $bgCol: #070b14;
             font: 400 25px 'Spartan', sans-serif;
             font-weight:400;
     
-            color: #faf7eb;
+            color: $whiteCol;
             text-align:left;
             transform: translateY(-20px);
         }
@@ -54,7 +63,7 @@ $bgCol: #070b14;
             font: 400 18px 'Spartan', sans-serif;
             letter-spacing: .08em;
             line-height: 1.5em;
-            color: #faf7eb;
+            color: $whiteCol;
         }
 
         .logo-container {
@@ -84,11 +93,22 @@ $bgCol: #070b14;
         display:flex;
         justify-content: space-around;
         
-
+        background:
+        linear-gradient(to right, black 4px, transparent 4px) 0 0,
+        linear-gradient(to right, black 4px, transparent 4px) 0 100%,
+        linear-gradient(to left, black 4px, transparent 4px) 100% 0,
+        linear-gradient(to left, black 4px, transparent 4px) 100% 100%,
+        linear-gradient(to bottom, black 4px, transparent 4px) 0 0,
+        linear-gradient(to bottom, black 4px, transparent 4px) 100% 0,
+        linear-gradient(to top, black 4px, transparent 4px) 0 100%,
+        linear-gradient(to top, black 4px, transparent 4px) 100% 100%;
+    
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
         h1 {
             text-align: center;
          
-            color: #faf7eb;
+            color: $whiteCol;
             font: 200 50px 'Solway', serif;
             
             // font: 900 40px 'Spartan', sans-serif;
@@ -110,7 +130,7 @@ $bgCol: #070b14;
 
         p {
             font: 400 20px 'Spartan', sans-serif;
-            color: #dbbd7f;
+            color: $OrangeCol;
             margin: 0 auto 40px auto;
             width: 63.33333333%;
             font-style: italic;
@@ -121,6 +141,7 @@ $bgCol: #070b14;
         .title-container {
             height:100%;
         }
+
         .brackets {
             visibility: hidden;
             h1 {
@@ -146,12 +167,10 @@ $bgCol: #070b14;
         // margin-top:16px;
         width:52px;
         height:52px;
-        
-        
     }
     
     hr {
-        color: #faf7eb;
+        color: $whiteCol;
         border-top:0px;
         border-style: dashed;
         margin-bottom:32px;
@@ -170,36 +189,8 @@ $bgCol: #070b14;
             max-width:120px;
         }
 
-        // .brackets {
-        //     h1 {
-        //         color:#faf7eb;
-               
-        //         font: 600 160px 'Spartan', sans-serif;
-               
-        //         transform: translateY(-80px);
-        //     }
-        // }
     }
   
-
-    // .button {
-    //     // background: #faf7eb;
-    //     background: none;
-    //     // color: #020d16;
-    //     color: #faf7eb;
-    //     // border: 1px #faf7eb solid;
-    //     z-index: 1;
-    //     position: relative;
-    //     display: block;
-    //     margin: 0 auto;
-
-    //     svg {
-    //         width:32px;
-    //         height:32px;
-            
-    //     }
-    // }
-
 }
 
 .circle-container {
@@ -217,6 +208,7 @@ $bgCol: #070b14;
 
 .big-circle {
     position: absolute;
+
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -234,4 +226,47 @@ $bgCol: #070b14;
     100% {
         transform: rotate(360deg);
     }
+}
+
+$cornerWidth: 1px;
+$cornerDist: 0px;
+.hero-corner {
+    top: $cornerDist;
+    right: $cornerDist;
+    z-index: 21;
+    border-top: $cornerWidth solid;
+    border-right: $cornerWidth solid;
+}
+
+.hero-corner2 {
+    top: $cornerDist;
+    left: $cornerDist;
+    border-top: $cornerWidth solid;
+    border-left: $cornerWidth solid;
+}
+
+.hero-corner3 {
+    bottom: $cornerDist;
+    right: $cornerDist;
+    border-bottom: $cornerWidth solid;
+    border-right: $cornerWidth solid;
+}
+
+.hero-corner4 {
+    bottom: $cornerDist;
+    left: $cornerDist;
+    z-index: 21;
+    border-left: $cornerWidth solid;
+    border-bottom: $cornerWidth solid;
+}
+
+
+
+.hero-corner, .hero-corner2, .hero-corner3, .hero-corner4 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    z-index: 21;
+    border-color: $whiteCol;
+    // border-radius: 2px;
 }

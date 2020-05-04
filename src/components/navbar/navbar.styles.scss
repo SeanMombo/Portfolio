@@ -2,14 +2,20 @@ $bgCol: #070b14;
 $whiteCol: #faf7eb;
 
 .navbar {
+    // position:fixed;
+    // top:0;
+    // left:0;
+    // width:100%;
+
     text-transform: uppercase;
     display: flex;
     justify-content: flex-end;
     background-color: $bgCol;
     align-content:center;
     text-align: center;
-    padding: 16px 16px 0px;
-
+    transform: translateY(-6px);
+    z-index:10;
+    
     a {
         font-size: 16px;
         font-weight:400;

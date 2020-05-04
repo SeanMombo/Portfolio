@@ -4,6 +4,7 @@ import "./main-banner.styles.scss"
 import CustomButton from '../custom-button/custom-button.component'
 
 import linkedInSvg from '../../img/linkedin-logo.svg'
+import Navbar from '../navbar/navbar.component';
 
 class MainHeader extends React.Component {
 
@@ -13,8 +14,9 @@ class MainHeader extends React.Component {
 
     render () {
         return (
-
+        
             <div className='main-banner'>
+                <Navbar/>
                 {/* <div className='nav'>
                     <h1>about</h1>
                     <h1>portfolio</h1>
@@ -76,7 +78,18 @@ class MainHeader extends React.Component {
                         <h1>{'}'}</h1>
                     </div>
                    
+{/* 
+                    <div className="hero-corner hiddec-anim" ></div>
+
+                    <div className="hero-corner2 hiddec-anim" ></div>
+
+                    <div className="hero-corner3 hiddec-anim"></div>
+
+                    <div className="hero-corner4 hiddec-anim"></div>  */}
                 </div>
+
+
+
                 {/* <hr></hr> */}
                 
                 {/* <div className='icon-container'>
@@ -101,7 +114,13 @@ class MainHeader extends React.Component {
                 </div>
              
 
-                    
+                {/* <div class="circle-container">
+                <div class="big-circle">
+                <img src="https://owltastic.com/wp-content/themes/owltastic_2019_home/img/big-circle.svg" alt=""/>
+                </div>
+                </div>         */}
+
+            
             </div>
         )
     }
