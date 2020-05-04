@@ -1,32 +1,75 @@
+$bgCol: rgb(8, 11, 15);
+$OrangeCol: #F2AA4CFF;
+$whiteCol: #fcf8eb;
+$bgCol: #070b14;
+
 .custom-button {
- 
+        width:100%;
+        
+        
         .button {
-        background: #faf7eb;
+        background: $whiteCol;
         // background: none;
-        color: #020d16;
-
+        color: $bgCol;
+        
         min-width:150px;
-
-        // z-index: 1;
+        
+        z-index: 1;
         position: relative;
-        display: block;
+        display: inline-block;
+        max-width:371.96px;
         margin: 0 auto;
+        height: 52px;
+        padding:7px;
 
         border-radius:200px;
         font-weight:600;
 
         overflow:hidden;
   
-        transition-timing-function: ease-in;
-        transition: 0.2s;
+ 
+		position: relative;
+		
+        border: 2px solid  $whiteCol;
+		transition: color ease-out .5s, border-color ease-out .5s;
+		
+        // transition-timing-function: ease-in;
+        // transition: 0.2s;
 
         
-        &:hover {
+        // &:hover {
 
-            /* This timing applies on the way IN */
-            transition-timing-function: ease-out;
-            transition: 0.05s;
+        //     /* This timing applies on the way IN */
+        //     transition-timing-function: ease-out;
+        //     transition: 0.05s;
+        // }
+
+
+    &::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            background: $OrangeCol;
+            height: 150px;
+            width: 150%;
+            border-radius: 50%;
+
+            left: -25%;
+            bottom:-330%;
+            transition: all ease-out .5s;
+    }
+    
+    &:hover {
+        color: $bgCol;
+ 
+        border: 2px solid  $OrangeCol;
+        &::after {
+            bottom: -50px;  
+            
         }
+    }
+
+
     }
 }
 
