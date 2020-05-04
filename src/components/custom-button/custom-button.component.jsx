@@ -12,7 +12,7 @@ class CustomButton extends React.Component {
         const { href, text } = this.props;
         return (
             <div className='custom-button '>
-                <a className="button" href={href}>{text}</a>
+                <a className="button" data-type={text} href={href}>{text}</a>
                         
             </div>
         )

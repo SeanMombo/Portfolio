@@ -92,7 +92,7 @@ class MainHeader extends React.Component {
                 <div className="social-container">
                     
                     {/* <CustomButton href="#contact-form" text='About me'/> */}
-                    <CustomButton href="#contact-form" text='View My Portfolio'/>
+                    <CustomButton href="#" text='View My Portfolio'/>
                     
                     {/* <CustomButton href="#contact-form" text='portfolio'/>
    
