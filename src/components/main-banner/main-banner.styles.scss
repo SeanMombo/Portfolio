@@ -1,26 +1,26 @@
 $bgCol: rgb(8, 11, 15);
 $OrangeCol: #F2AA4CFF;
+$OrangeCol: #ff0078;
 $whiteCol: #fcf8eb;
 $bgCol: #070b14;
+
+
 // $bgCol: rgb(12, 11, 11);
-// $OrangeCol: #E94B3CFF;
+//  $OrangeCol: #E94B3CFF;
 
 
 .main-banner {
     background: $bgCol  no-repeat;
-    // background: #214261 url('../../img/main-banner-bg@2x.jpg') no-repeat;
+    background: #214261 url('../../img/main-banner-bg@2x.jpg') no-repeat;
+    background: #214261 url('../../img/goop2.jpg') no-repeat;
+
     background-size: cover;
     background-position: center;
     // padding: 32px 9.39535% 64px;
     padding: 16px 9.39535% 64px;
     position: relative;
     text-align: center;
-    // transform:translateY(-22px);\
-    height: calc(100vh - 0px);
-
-
-   
-
+    // height: calc(100vh - 0px);
 
     .nav {
         background: $bgCol  no-repeat;
@@ -38,6 +38,7 @@ $bgCol: #070b14;
             color: $whiteCol;
         }
     }
+    
     header {
         align-items: center;
         display: flex;
@@ -93,18 +94,18 @@ $bgCol: #070b14;
         display:flex;
         justify-content: space-around;
         
-        background:
-        linear-gradient(to right, black 4px, transparent 4px) 0 0,
-        linear-gradient(to right, black 4px, transparent 4px) 0 100%,
-        linear-gradient(to left, black 4px, transparent 4px) 100% 0,
-        linear-gradient(to left, black 4px, transparent 4px) 100% 100%,
-        linear-gradient(to bottom, black 4px, transparent 4px) 0 0,
-        linear-gradient(to bottom, black 4px, transparent 4px) 100% 0,
-        linear-gradient(to top, black 4px, transparent 4px) 0 100%,
-        linear-gradient(to top, black 4px, transparent 4px) 100% 100%;
+    //     background:
+    //     linear-gradient(to right, black 4px, transparent 4px) 0 0,
+    //     linear-gradient(to right, black 4px, transparent 4px) 0 100%,
+    //     linear-gradient(to left, black 4px, transparent 4px) 100% 0,
+    //     linear-gradient(to left, black 4px, transparent 4px) 100% 100%,
+    //     linear-gradient(to bottom, black 4px, transparent 4px) 0 0,
+    //     linear-gradient(to bottom, black 4px, transparent 4px) 100% 0,
+    //     linear-gradient(to top, black 4px, transparent 4px) 0 100%,
+    //     linear-gradient(to top, black 4px, transparent 4px) 100% 100%;
     
-      background-repeat: no-repeat;
-      background-size: 20px 20px;
+    //   background-repeat: no-repeat;
+    //   background-size: 20px 20px;
         h1 {
             text-align: center;
          
@@ -129,8 +130,8 @@ $bgCol: #070b14;
         }
 
         p {
-            font: 400 20px 'Spartan', sans-serif;
-            color: $OrangeCol;
+            font: 400 18px 'Spartan', sans-serif;
+            color: $whiteCol;
             margin: 0 auto 40px auto;
             width: 63.33333333%;
             font-style: italic;

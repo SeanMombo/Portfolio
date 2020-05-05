@@ -1,5 +1,5 @@
 $bgCol: rgb(8, 11, 15);
-$OrangeCol: rgb(245, 153, 33);
+$OrangeCol: rgb(240, 243, 33);
 
 $whiteCol: #fcf8eb;
 $bgCol: #070b14;
@@ -12,35 +12,19 @@ $bgCol: #070b14;
     background-size: cover;
     background-position: center;
 
-    padding: 16px 9.39535% 64px;
+    // padding: 37px 9.39535% 64px;
+    padding: 64px 9.39535% 64px;
     position: relative;
     text-align: center;
 
-    height: calc(100vh - 32px - 50.4px);
+    height: calc(100vh - 50.4px);
 
     display:flex;
-    align-content: center;
-    justify-content: center;
+    align-content: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
    
-    
-    .nav {
-        background: $bgCol  no-repeat;
-        position: static;
-
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-
-        h1 {
-            margin-left:30px;
-            text-transform: uppercase;
-            font: 200 22px 'Spartan', sans-serif;
-            color: $whiteCol;
-        }
-    }
-
+ 
     header {
         align-items: center;
         display: flex;
@@ -103,57 +87,66 @@ $bgCol: #070b14;
         
         .name-container {
             display:flex;
+            justify-content: center;
             // margin-left:-30px;
-            .logo-container {
+            position:relative;
+            z-index:1;
+            margin-bottom:22px;
+            width: 617px;
+            
+            .name-background {
+                background-color:$OrangeCol;
+                position:absolute;
+                width:120%;
+                height:190%;
+                left:-10%;
+                bottom:-14px;
+                border-radius:10px;
+                z-index:-1;
+            }
+
+            h1 {
+                text-transform: uppercase;
+                text-align:center;
+                color: $bgCol;
+
+                font: 80.5px 'Spartan', sans-serif;
+                letter-spacing: 0.03em;
+                line-height: 0.70727272727em;
+                font-weight: 100;
+                margin:0;
                 
+                padding:0;
+
+                .span1 {
+                    font-weight: 900;
+                }
+            }
+
+            .logo-container {
+                    
                 width: 150px;
                 height: 150px;
-                
                 
                 svg {
                     pointer-events:none;
                     width: 290px;
-                    
-                    // visibility: hidden;
-                    
-                    
                     margin-left: -20px;
                     margin-top: -162px;
-
-                    
                 }
-            }
-
-            h1 {
-
-                text-transform: uppercase;
-                text-align:left;
-                color: $whiteCol;
-
-                font: 80px 'Spartan', sans-serif;
-                letter-spacing: 0.03em;
-                line-height: 0.70727272727em;
-                
-                font-weight: 100;
-                margin:0;
-                margin-left:-6px;
-               
-                padding:0;
-                .span1 {
-                    font-weight: 900;
-                }
-
             }
         }
 
         .title-container {
-            
+            // padding:40px;
+            // background:black;
+
+            position:relative;
             width:100%;
             display:flex;
-            align-items: center;
-            // justify-content: space-between;
-            justify-content: flex-end;
-
+            align-items: flex-end;
+            justify-content: space-between;
+            
             flex-direction: row;
             flex-wrap: wrap;
 
@@ -170,9 +163,9 @@ $bgCol: #070b14;
 
             h1 {
                 // text-transform: lowercase;
-                color: $OrangeCol;
+                color: white;
                 letter-spacing: 0.1em;
-                font-size:31.3px;
+                font-size:30px;
                 text-align: center;
                
             }
@@ -190,7 +183,16 @@ $bgCol: #070b14;
             }
         }
     }
-
+    
+    p {
+        font: 400 16px 'Spartan', sans-serif;
+        color: $OrangeCol;
+        margin: 0 auto 40px auto;
+        
+        font-style: italic;
+        line-height: 1.4545454545em; 
+        text-align:center;
+    }
     .icon-container {
         
         display:flex;
@@ -210,7 +212,8 @@ $bgCol: #070b14;
     hr {
         color: $whiteCol;
         border-top:0px;
-        border-style: solid;
+        border-style: dashed;
+        border-radius:0px;
         
         opacity: 0.2;
         // width:60%;
@@ -259,7 +262,7 @@ $bgCol: #070b14;
 }
 
 $cornerWidth: 1px;
-$cornerDist: 0px;
+$cornerDist: 124px;
 .hero-corner {
     top: $cornerDist;
     right: $cornerDist;

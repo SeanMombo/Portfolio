@@ -3,7 +3,7 @@ import React from 'react';
 import "./main-banner.styles.scss"
 import CustomButton from '../custom-button/custom-button.component'
 
-import linkedInSvg from '../../img/linkedin-logo.svg'
+// import linkedInSvg from '../../img/linkedin-logo.svg'
 import Navbar from '../navbar/navbar.component';
 
 class MainHeader extends React.Component {
@@ -16,7 +16,7 @@ class MainHeader extends React.Component {
         return (
         
             <div className='main-banner'>
-                <Navbar/>
+                
                 {/* <div className='nav'>
                     <h1>about</h1>
                     <h1>portfolio</h1>
@@ -68,8 +68,8 @@ class MainHeader extends React.Component {
                         </h1>
                         <p>
 
-                        I have two insatiable desires<br/>— to learn and to create.
-                        
+                        {/* I have two insatiable desires<br/>— to learn and to create. */}
+                        & indie game entrepreneur
 
                         </p>
                     </div>
@@ -78,7 +78,7 @@ class MainHeader extends React.Component {
                         <h1>{'}'}</h1>
                     </div>
                    
-{/* 
+                    {/* 
                     <div className="hero-corner hiddec-anim" ></div>
 
                     <div className="hero-corner2 hiddec-anim" ></div>

@@ -1,12 +1,14 @@
 $bgCol: rgb(8, 11, 15);
-$OrangeCol: #F2AA4CFF;
+// $OrangeCol: #F2AA4CFF;
+$OrangeCol: rgb(240, 243, 33);
+$OrangeCol: #ff0078;
 $whiteCol: #fcf8eb;
 $bgCol: #070b14;
 
 .custom-button {
         
-        margin-left: auto;
-        min-width:371.96px;
+        
+        width:100%;
         .button {
         background: $whiteCol;
         background: none;
