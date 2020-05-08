@@ -17,12 +17,9 @@ $bgCol: #070b14;
     // background: $bgCol url('../../img/rectsmall2.png') no-repeat; THIS IS THE GOOD CIRCLE ONE
     background: $bgCol url('../../img/rect6.png') no-repeat;
 
-    clip-path: circle(radius at x, y);
-    // background:none;
-    // min-width:1400px;
     background-size: 1920px;
     background-position: center;
-    // padding: 32px 9.39535% 64px;
+
     padding: 16px 9.39535% 64px;
     position: relative;
     text-align: center;
@@ -95,21 +92,17 @@ $bgCol: #070b14;
          
             color: $whiteCol;
             font: 200 50px 'Solway', serif;
-            
-            
-            // font: 900 40px 'Spartan', sans-serif;
+        
             letter-spacing: 0.03em;
             line-height: 1.2727272727em;
             margin-bottom: 16px;
 
             .span1 {
                 font: 400 16px 'Spartan', sans-serif;
-                // font: 200 22px 'Solway', serif;
                 
             }
             .span2 {
                 font: 300 40px 'Spartan', sans-serif;
-                // font: 200 22px 'Solway', serif;
             
             }
         }

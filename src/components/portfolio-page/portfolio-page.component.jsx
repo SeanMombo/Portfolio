@@ -2,7 +2,7 @@ import React from 'react';
 
 import "./portfolio-page.styles.scss"
 import CustomButton from '../custom-button/custom-button.component'
-
+import overlayImg from '../../img/col1.png'
 
 class PortfolioPage extends React.Component {
 
@@ -40,6 +40,8 @@ class PortfolioPage extends React.Component {
                     </div>
                     </a>
                 </article>
+
+                {/* <img className="circle-overlay" src={overlayImg}/> */}
             </div>
         )
     }

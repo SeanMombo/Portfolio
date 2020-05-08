@@ -19,7 +19,7 @@ $whiteCol: #faf7eb;
     .name {
         position:absolute;
         left:32px;
-        padding-left:0px;
+        // padding-left:0px;
     }
 
     // z-index:10;
@@ -30,8 +30,8 @@ $whiteCol: #faf7eb;
         color: $whiteCol;
         padding: 16px 16px;
         position:relative;
-        padding-right:0px;
-        padding-left:32px;
+        // padding-right:0px;
+        // padding-left:32px;
         z-index:1;
 
         display: inline-block;

@@ -96,7 +96,7 @@ body {
     color: $bgCol;
     /* font-family: "GT Walsheim", sans-serif; */
     height:100vh; 
-    padding: 32px;
+    // padding: 0 32px;
 }
 
 a {
@@ -121,7 +121,7 @@ p {
 
 .button {
   text-transform: uppercase;
-  font: 500 20px spartan, sans-serif;
+  font: 500 20px 'Spartan', sans-serif;
   letter-spacing: .08em;
 
   background: $OrangeCol;
