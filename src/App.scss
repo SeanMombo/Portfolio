@@ -1,5 +1,5 @@
 $bgCol: #01080e;
-$whiteCol: #fcf8eb;
+$whiteCol: #070b14;
 $OrangeCol: #F2AA4CFF;
 
 
@@ -73,7 +73,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   // align-content: center;
     // width:60vw;
   text-align: left;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Spartan', sans-serif;
   font-size: 1rem;
   
 }
@@ -96,7 +96,7 @@ body {
     color: $bgCol;
     /* font-family: "GT Walsheim", sans-serif; */
     height:100vh; 
-    // padding: 16px;
+    padding: 32px;
 }
 
 a {
@@ -114,7 +114,7 @@ h1 {
 }
 
 p {
-  font: 400 22px spartan, sans-serif;
+  font: 400 22px 'Spartan', sans-serif;
   font-size: 22px;
   line-height: 1.4545454545em; 
 }

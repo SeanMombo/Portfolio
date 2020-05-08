@@ -9,27 +9,29 @@ $whiteCol: #faf7eb;
 
     text-transform: lowercase;
     background-color: $bgCol;
+
+    display: flex;
+    justify-content: flex-end;
     
-        display: flex;
-        justify-content: flex-end;
-        
-        align-content:center;
-        text-align: center;
-    
+    align-content:center;
+    text-align: center;
+
     .name {
         position:absolute;
-        left:0px;
+        left:32px;
+        padding-left:0px;
     }
 
     // z-index:10;
     
-    a {
+    a{
         font-size: 16px;
         font-weight:400;
         color: $whiteCol;
         padding: 16px 16px;
         position:relative;
-
+        padding-right:0px;
+        padding-left:32px;
         z-index:1;
 
         display: inline-block;
