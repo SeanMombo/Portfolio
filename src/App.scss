@@ -1,8 +1,23 @@
+$bgCol: #01080e;
+$whiteCol: #fcf8eb;
+$OrangeCol: #F2AA4CFF;
+
+
+@font-face {
+  font-family: vcr;
+  // src: url('./font/VCR_OSD_MONO.ttf') format('truetype');
+  // src: url('./font/Pixellari.ttf') format('truetype');
+  src: url('./font/perfect dos.ttf') format('truetype');
+}
+@font-face {
+  font-family: yoster;
+  src: url('./font/Pixellari.ttf') format('truetype');
+}
+
+
 * {
   box-sizing: border-box;
   font-family: Helvetica Neue, Open Sans, Arial;
-
-
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -12,31 +27,83 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+
+
 }
 
+// #root {
+//   height:100vh;
+//   display:flex;
+//   justify-content: center;
+//   align-content: center;
+//   flex-wrap: wrap;
+//   flex-direction: column;
+//   background: $bgCol;
+//   position: relative;
+
+
+//   image-rendering: pixelated;
+//   background: $bgCol url('./img/rect4.png') no-repeat;
+//   background-size: cover;
+//   background-position: center;
+
+//   // &::after {
+//   //   content: "";
+//   // image-rendering: pixelated;
+//   // background: url('./img/rect.png') no-repeat;
+//   // background-size: cover;
+//   // background-position: center;
+//   //   // opacity: 0.25;
+//   //   top: 0;
+//   //   left: 0;
+//   //   bottom: 0;
+//   //   right: 0;
+//   //   position: absolute;
+//   //   z-index: 1;   
+//   // }
+
+// }
+
 .App {
+  
+  // display:flex;
+  // flex-direction: column;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // align-content: center;
+    // width:60vw;
   text-align: left;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
- 
+  
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 
-$bgCol: #01080e;
+
 
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #faf7eb;
+    background: $whiteCol;
     color: $bgCol;
     /* font-family: "GT Walsheim", sans-serif; */
-    padding: 32px;
-    
+    height:100vh; 
+    // padding: 16px;
 }
 
 a {
+    font: 400 22px spartan, sans-serif;
+    
     text-decoration: none;
-    color: #dbbd7f;
+    color: $OrangeCol;
 }
 
 h1 {
@@ -47,6 +114,7 @@ h1 {
 }
 
 p {
+  font: 400 22px spartan, sans-serif;
   font-size: 22px;
   line-height: 1.4545454545em; 
 }
@@ -56,7 +124,7 @@ p {
   font: 500 20px spartan, sans-serif;
   letter-spacing: .08em;
 
-  background: #dbbd7f;
+  background: $OrangeCol;
   border: none;
   border-radius: 2px;
   color: $bgCol;
@@ -69,4 +137,14 @@ p {
   cursor: pointer;
   line-height: 2.1em;
   text-align: center;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
 }

@@ -1,33 +1,76 @@
+$bgCol: rgb(8, 11, 15);
+// $OrangeCol: #F2AA4CFF;
+$OrangeCol: rgb(240, 243, 33);
+$OrangeCol: #ff0078;
+$whiteCol: #fcf8eb;
+$bgCol: #070b14;
+
 .custom-button {
-   
+        
+        
+        width:100%;
         .button {
-        // background: #faf7eb;
+        background: $whiteCol;
         background: none;
-        // color: #020d16;
-        color: #faf7eb;
-        // min-width:150px;
-        width:190px;
-        // max-height:72px;
+        color: $whiteCol;
+        
+        min-width:150px;
+        
         z-index: 1;
         position: relative;
-        display: block;
-        margin: 0 auto;
-        // padding: 16px 24px 16px 24px;
-        // border: 1px rgba(255, 255, 255, 1) solid;
-        // border-right:none; border-left:none;
-        // border-radius:26px;
-        svg {
-            margin-top:8px;
-            width:32px;
-            height:32px; 
-        }
+        display: inline-block;
+        max-width:371.96px;
+        margin-left: auto;
+        height: 52px;
+        padding:7px;
 
+        border-radius:200px;
         font-weight:600;
-        &:hover {
-            // background:2px rgb(235, 189, 121);
-            // border: 2px rgba(235, 189, 121, 0.75) solid;
-            // color: #020d16 !important;
+
+        overflow:hidden;
+  
+ 
+		position: relative;
+		
+        border: 2px solid  $whiteCol;
+		transition: color ease-out .5s, border-color ease-out .5s;
+		
+        // transition-timing-function: ease-in;
+        // transition: 0.2s;
+
+        
+        // &:hover {
+
+        //     /* This timing applies on the way IN */
+        //     transition-timing-function: ease-out;
+        //     transition: 0.05s;
+        // }
+
+    &::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            background: $OrangeCol;
+            height: 150px;
+            width: 150%;
+            border-radius: 50%;
+
+            left: -25%;
+            bottom:-330%;
+            transition: all ease-out .5s;
+    }
+    
+    &:hover {
+        color: $bgCol;
+ 
+        border: 2px solid  $OrangeCol;
+        &::after {
+            bottom: -50px;  
+            
         }
+    }
+
+
     }
 }
 

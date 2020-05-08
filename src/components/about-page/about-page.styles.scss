@@ -1,10 +1,13 @@
-$bgCol: #070b14;
+$bgCol: rgb(8, 11, 15);
+$OrangeCol: #F2AA4CFF;
+$whiteCol: #faf7eb;
 
+$OrangeCol: #ff0078;
 .about-page {
     display: flex;
 
     .bio-container {
-        background-color: #dbbd7f;
+        background-color: $OrangeCol;
         // background-image: url(img/description-moon-small.png);
         background-position: left top;
         background-size: auto auto;
@@ -18,8 +21,9 @@ $bgCol: #070b14;
         .bio {
             width:80%;
         }
-
+        
         p {
+            
             margin-bottom: 64px;
             width: 80%;
         }

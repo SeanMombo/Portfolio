@@ -1,0 +1,305 @@
+$bgCol: rgb(8, 11, 15);
+$OrangeCol: rgb(240, 243, 33);
+
+$whiteCol: #fcf8eb;
+$bgCol: #070b14;
+// $bgCol: rgb(12, 11, 11);
+// $OrangeCol: #E94B3CFF;
+
+
+.main-banner {
+    background: $bgCol  no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    // padding: 37px 9.39535% 64px;
+    padding: 64px 9.39535% 64px;
+    position: relative;
+    text-align: center;
+
+    height: calc(100vh - 50.4px);
+
+    display:flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+   
+ 
+    header {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // margin-bottom: 32px;
+        position: relative;
+        z-index: 1;
+        margin-top:-20px;
+        h1 {
+            // text-align: left;
+            // font: 100 70px 'Solway', serif;
+            font: 400 25px 'Spartan', sans-serif;
+            font-weight:400;
+    
+            color: $whiteCol;
+            text-align:left;
+            transform: translateY(-20px);
+        }
+        
+        .contact-link {
+            text-transform: uppercase;
+            font: 400 18px 'Spartan', sans-serif;
+            letter-spacing: .08em;
+            line-height: 1.5em;
+            color: $whiteCol;
+        }
+
+       
+    }
+
+    
+
+    .main-banner-content {
+        margin: 0 auto;
+        width: 100%;
+       
+        max-width: 617px;
+        position: relative;
+        
+        display:flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+     
+
+        h1 {
+            text-align: center;
+         
+            color: $whiteCol;
+            font: 200 50px 'Solway', serif;
+            
+            // font: 900 40px 'Spartan', sans-serif;
+            letter-spacing: 0.03em;
+            line-height: 1.2727272727em;
+            margin-bottom: 16px;
+
+          
+        }
+
+        
+        .name-container {
+            display:flex;
+            justify-content: center;
+            // margin-left:-30px;
+            position:relative;
+            z-index:1;
+            margin-bottom:22px;
+            width: 617px;
+            
+            .name-background {
+                background-color:$OrangeCol;
+                position:absolute;
+                width:120%;
+                height:190%;
+                left:-10%;
+                bottom:-14px;
+                border-radius:10px;
+                z-index:-1;
+            }
+
+            h1 {
+                text-transform: uppercase;
+                text-align:center;
+                color: $bgCol;
+
+                font: 80.5px 'Spartan', sans-serif;
+                letter-spacing: 0.03em;
+                line-height: 0.70727272727em;
+                font-weight: 100;
+                margin:0;
+                
+                padding:0;
+
+                .span1 {
+                    font-weight: 900;
+                }
+            }
+
+            .logo-container {
+                    
+                width: 150px;
+                height: 150px;
+                
+                svg {
+                    pointer-events:none;
+                    width: 290px;
+                    margin-left: -20px;
+                    margin-top: -162px;
+                }
+            }
+        }
+
+        .title-container {
+            // padding:40px;
+            // background:black;
+
+            position:relative;
+            width:100%;
+            display:flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            margin-bottom:32px;
+            hr {
+                color: $whiteCol;
+                border-top:0px;
+                border-style: solid;
+                
+                opacity: 0.2;
+                width:38%;
+                
+            }
+
+            h1 {
+                // text-transform: lowercase;
+                color: white;
+                letter-spacing: 0.1em;
+                font-size:30px;
+                text-align: center;
+               
+            }
+
+        }
+
+        .brackets {
+            visibility: hidden;
+            h1 {
+               
+                font: 300 160px 'Spartan', sans-serif;
+               
+                transform: translateY(-20px);
+       
+            }
+        }
+    }
+    
+    p {
+        font: 400 16px 'Spartan', sans-serif;
+        color: $OrangeCol;
+        margin: 0 auto 40px auto;
+        
+        font-style: italic;
+        line-height: 1.4545454545em; 
+        text-align:center;
+    }
+    .icon-container {
+        
+        display:flex;
+        justify-content: center;
+        margin: 0 auto 32px auto;
+        
+    }
+    .social-icon {
+        // position:absolute;
+        // margin:16px;
+        // margin-top:16px;
+        width:52px;
+        height:52px;
+        fill: $whiteCol;
+    }
+    
+    hr {
+        color: $whiteCol;
+        border-top:0px;
+        border-style: dashed;
+        border-radius:0px;
+        
+        opacity: 0.2;
+        // width:60%;
+        width:100%;
+    }
+    .social-container {
+        
+
+    }
+  
+}
+
+.circle-container {
+    background-size: 161px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+    
+}
+
+.big-circle {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.big-circle img {
+    animation: big-spin 120s linear infinite;
+}
+
+@keyframes big-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+$cornerWidth: 1px;
+$cornerDist: 124px;
+.hero-corner {
+    top: $cornerDist;
+    right: $cornerDist;
+    z-index: 21;
+    border-top: $cornerWidth solid;
+    border-right: $cornerWidth solid;
+}
+
+.hero-corner2 {
+    top: $cornerDist;
+    left: $cornerDist;
+    border-top: $cornerWidth solid;
+    border-left: $cornerWidth solid;
+}
+
+.hero-corner3 {
+    bottom: $cornerDist;
+    right: $cornerDist;
+    border-bottom: $cornerWidth solid;
+    border-right: $cornerWidth solid;
+}
+
+.hero-corner4 {
+    bottom: $cornerDist;
+    left: $cornerDist;
+    z-index: 21;
+    border-left: $cornerWidth solid;
+    border-bottom: $cornerWidth solid;
+}
+
+
+
+.hero-corner, .hero-corner2, .hero-corner3, .hero-corner4 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    z-index: 21;
+    border-color: $whiteCol;
+    // border-radius: 2px;
+}

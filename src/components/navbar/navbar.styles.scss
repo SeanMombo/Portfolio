@@ -1,0 +1,108 @@
+$bgCol: #070b14;
+$whiteCol: #faf7eb;
+
+.navbar {
+    // position:fixed;
+    // top:0;
+    // left:0;
+    // width:100%;
+
+    text-transform: lowercase;
+    background-color: $bgCol;
+    
+        display: flex;
+        justify-content: flex-end;
+        
+        align-content:center;
+        text-align: center;
+    
+    .name {
+        position:absolute;
+        left:0px;
+    }
+
+    // z-index:10;
+    
+    a {
+        font-size: 16px;
+        font-weight:400;
+        color: $whiteCol;
+        padding: 16px 16px;
+        position:relative;
+
+        z-index:1;
+
+        display: inline-block;
+
+        &::after {
+            position:absolute;
+            content:'';
+            left: 50%;
+            bottom: 15px;
+            width:0%;
+            height:0%;
+            background-color:$whiteCol;
+            z-index:-1;
+            // transition: all ease 0.1s;
+        }
+
+        &:hover {
+            // color:black;
+
+            &::after {
+                height:2%;
+                left: 10%;
+                width: 80%;
+                // transition: all ease 0.05s;
+            }
+          
+        }
+    }
+    
+}
+
+
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
+    margin-top:-20px;
+    h1 {
+        // text-align: left;
+        // font: 100 70px 'Solway', serif;
+        font: 400 25px 'Spartan', sans-serif;
+        font-weight:400;
+
+        color: $whiteCol;
+        text-align:left;
+        transform: translateY(-20px);
+    }
+    
+    .contact-link {
+        text-transform: uppercase;
+        font: 400 18px 'Spartan', sans-serif;
+        letter-spacing: .08em;
+        line-height: 1.5em;
+        color: $whiteCol;
+    }
+
+    .logo-container {
+
+        width: 150px;
+        height: 150px;
+
+        svg {
+            pointer-events:none;
+            width: 190px;
+            
+            position: absolute;
+            left: 50%;
+            margin-left: -115px;
+            margin-top: -120px;
+        }
+    }
+}

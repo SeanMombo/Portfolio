@@ -1,0 +1,110 @@
+$bgCol: rgb(8, 11, 15);
+$OrangeCol: #F2AA4CFF;
+$OrangeCol: #ff0078;
+$whiteCol: #fcf8eb;
+$bgCol: #070b14;
+
+
+.portfolio-page {
+    margin: 0;
+    article {
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        font-feature-settings: "onum";
+        color: #333;
+        // font-family: TiemposText,Georgia,"Times New Roman","DejaVu Serif",serif;
+        font-weight: 400;
+        font-size: 1.125em;
+        line-height: 1.5em;
+        display: block;
+    }
+
+    a {
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        font-feature-settings: "onum";
+        // font-family: TiemposText,Georgia,"Times New Roman","DejaVu Serif",serif;
+        font-weight: 400;
+        font-size: 1.125em;
+        line-height: 1.5em;
+        background-color: #dfdfdf;
+        background-size: cover;
+        background-position: 50% 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 268px;
+        margin-bottom: 0px;
+        padding: 0 30px;
+        position: relative;
+        text-align: center;
+        outline: 0;
+        transition: all 0.1s ease;
+        text-decoration: none;
+        color: #004077;
+        background-image: url(../../img2/lolItemBuilder.png);
+    }
+
+   
+
+  
+  .project {
+    // background-color: $color--gray-light;
+    background-size: cover;
+    background-position: 50% 45%;
+    color: white;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+    height: 268px;
+    margin-bottom: 0px;
+    padding: 0 30px;
+    position: relative;
+    text-align: center;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      z-index: 1;
+      opacity: 0;
+    //   @include trans(.1s, ease);
+    }
+    // &.aug:before {
+    //   background-color: $color--aug-secondary;
+    // }
+    // &.cent:before {
+    //   background-color: $color--cent-secondary;
+    // }
+    // &.chop:before {
+    //   background-color: $color--chop-secondary;
+    // }
+    // &.int:before {
+    //   background-color: $color--int-secondary;
+    // }
+    // &.map:before {
+    //   background-color: $color--cent-secondary;
+    // }
+    // &:hover:before {
+    //   opacity: .11;
+    // }
+    // &:hover .post-list__button {
+    //   transform:translateY(-3px);
+    // }
+  }
+  
+  .project-info {
+    position: relative;
+    z-index: 2;
+    color: white;
+  }
+  .project-metadata {
+    font-style: italic;
+    font-size: ms(-1);
+    margin-bottom: ms(-8);
+  }
+  
+}
