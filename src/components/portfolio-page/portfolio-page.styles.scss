@@ -8,4 +8,20 @@ $bgCol: #070b14;
 .portfolio-page {
   margin: 0;  
   // margin-top:32px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 51px);
+  justify-content: center;
+
+  image-rendering: pixelated;
+  background-image: url(../../img/rect11.png);
+  background-size: cover;
+  background-position: 50% 45%;
+  
+  .project-container {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+   
+  }
 }
