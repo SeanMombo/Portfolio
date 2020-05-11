@@ -21,14 +21,16 @@ $bgCol: #070b14;
     // flex-direction: row;
     // display: flex;
     // justify-content: center;
-   
   }
 
   .portfolio-left {
     float:left;
     width:740px;
     height: calc((100vh - 51px));
-    background:red;
+    background-image: url(../../img/bigcanvas4.png);
+    image-rendering: pixelated;
+    background-size: 1920px;
+    background-position: 94.7% 50%;
   }
 
   .portfolio-right {
