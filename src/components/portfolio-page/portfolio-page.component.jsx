@@ -11,9 +11,9 @@ class PortfolioPage extends React.Component {
         return (
             <div className="portfolio-page">
 
-                <div className="portfolio-left">
+                {/* <div className="portfolio-left">
                  
-                </div>
+                </div> */}
 
                 <div className="portfolio-right">
                     <div className="project-container">

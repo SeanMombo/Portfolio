@@ -11,8 +11,8 @@ const Project = ({ bgImg, date, title, meta }) => (
 
                 <source src={algo} type="video/mp4"></source>
             </video> 
-
-            <div className={`background ${bgImg}`}></div> */}
+*/}
+            <div className={`background ${bgImg}`}></div> 
 
             <div className="project-info">
                 {/* <p className="project-date">{date}</p>  */}
