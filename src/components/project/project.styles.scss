@@ -1,3 +1,8 @@
+$w: #f1fcc2;
+$b: #009b96;
+$p: #ff0077;
+
+
 .project {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -18,7 +23,7 @@
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
         overflow: hidden;
-        
+        padding: 0 16px;
 
         display: flex;
         justify-content: center;
@@ -31,40 +36,43 @@
 
   
         position: relative;
-        text-align: center;
+        text-align: left;
         outline: 0;
         transition: all 0.2s ease;
         text-decoration: none;
-        color: #004077;
+        color: #000000;
         
 
         &.bg1 {
             background-color: rgb(84, 60, 107);
+            background-color: $b;
         }
         &.bg2 {
-            background-color: rgb(54, 146, 89);
+            // background-color: rgb(54, 146, 89);
+            background-color: $p;
         }
         &.bg3 {
-            background-color: rgb(202, 171, 31);
+            // background-color: rgb(202, 171, 31);
+            background-color:  $b;
         }
 
 
 
         .background {
-            
+            padding:16px;
             // width: 592px;
             // height:100%;
-            width:100%;
+            width: 600px;
             height: 100%;
-            position: absolute;
+            // position: absolute;
             &.bg1 {
                 
                 // background: url(../../img2/LeagueBanner.png);
                 background: url(../../img2/LeaguePcMobile3.png);
                 
-                background-position: 61% 50%;
+                background-position: 60% 50%;
                 background-repeat: no-repeat;
-                background-size: 800px;
+                background-size: 570px;
                 &:hover {
     
                 }
@@ -78,13 +86,14 @@
                 
                 }
             }
-            
+
             &.bg3 {
                 background: url(../../img2/LeaguePcMobile4.png);
                 background-repeat: no-repeat;
                 background-position: 65% 95%;
                 background-size: 700px;
             }
+            
         }
 
 
@@ -104,29 +113,29 @@
             height:100%;
         }
 
-        &:hover {
-            &::after {
-                opacity: 1;
-            }
-            .project-info {
-                opacity:1;
-            }
-        }
+        // &:hover {
+        //     &::after {
+        //         opacity: 1;
+        //     }
+        //     .project-info {
+        //         opacity:1;
+        //     }
+        // }
 
         // .background {
         //     background-color:red;
         // }
     }
 
+
     .project-info {
         transition: all .3s ease;
-        opacity:0;
-        padding:64px;
+        opacity:1;
+        padding:16px;
         position: relative;
-
-        color: white;
+        color: #000000;
         z-index:1;      
-
+        color: $w;
     }
 
     .project-date{
@@ -137,12 +146,25 @@
     }
 
     .project-title {
-        font: 200 56px 'Solway', serif;
+        font: 500 30px 'Solway', serif;
+        // font: 900 18px 'spartan', sans-serif;
         line-height: 1.5em;
     }
 
-    .project-meta {
-        font-family: 'Spartan', sans-serif;
-        line-height: 1.8em;
+    p {
+        // font: 900 18px 'spartan', sans-serif;
+
+        font: 500 20px 'spartan', sans-serif;
+        max-width: 500px;
+
+        span {
+            color: $p;
+            font-weight: 600;
+        }
+        margin-bottom:32px;
+    }
+
+    .hover-hype-text {
+        
     }
 }

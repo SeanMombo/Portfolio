@@ -11,13 +11,13 @@ class PortfolioPage extends React.Component {
         return (
             <div className="portfolio-page">
 
-                {/* <div className="portfolio-left">
+                <div className="portfolio-left">
                  
-                </div> */}
+                </div>
 
                 <div className="portfolio-right">
                     <div className="project-container">
-                        <Project bgImg={'bg1'} date="November 2019" title="LoL Set Builder" meta="Recreated the League of Legends item set builder as a web app"/>
+                        <Project bgImg={'bg1'} date="November 2019" title="LoL Set Builder" meta="Recreated as a <span>responsive web app</span>"/>
 
                         <Project bgImg={'bg2'}date="December 2019" title="Algo-Visual" meta="Engineered an interactive algorithm visualizer"/>
 

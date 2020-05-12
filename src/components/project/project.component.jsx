@@ -12,13 +12,15 @@ const Project = ({ bgImg, date, title, meta }) => (
                 <source src={algo} type="video/mp4"></source>
             </video> 
 */}
-            <div className={`background ${bgImg}`}></div> 
+            
 
             <div className="project-info">
                 {/* <p className="project-date">{date}</p>  */}
                 <h2 className="project-title">{title}</h2>
-                <p className="project-meta">{meta}</p>
+                <p className="project-meta" dangerouslySetInnerHTML={{__html: meta}}></p>
+                <div className="hover-hype-text">View Case Study</div>
             </div>
+            <div className={`background ${bgImg}`}></div> 
         </a>
     </article>
 )
