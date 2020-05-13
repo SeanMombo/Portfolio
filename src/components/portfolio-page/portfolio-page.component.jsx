@@ -4,6 +4,7 @@ import "./portfolio-page.styles.scss"
 import CustomButton from '../custom-button/custom-button.component'
 import overlayImg from '../../img/col1.png'
 import Project from '../project/project.component'
+import CardVert from '../card-vert/card-vert.component';
 
 class PortfolioPage extends React.Component {
 
@@ -22,6 +23,7 @@ class PortfolioPage extends React.Component {
                         <Project bgImg={'bg2'}date="December 2019" title="Algo-Visual" meta="Engineered an interactive algorithm visualizer"/>
 
                         <Project bgImg={'bg3'}/>
+                        
                     </div>
                 </div>
                 

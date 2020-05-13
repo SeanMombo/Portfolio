@@ -91,7 +91,7 @@ $bgCol: #070b14;
             text-align: center;
          
             color: $whiteCol;
-            font: 200 50px 'Solway', serif;
+            font: 600 50px 'Solway', serif;
         
             letter-spacing: 0.03em;
             line-height: 1.2727272727em;
@@ -108,7 +108,7 @@ $bgCol: #070b14;
         }
 
         p {
-            font: 400 18px 'Spartan', sans-serif;
+            font: 300 18px 'Spartan', sans-serif;
             color: $whiteCol;
             margin: 0 auto 40px auto;
             width: 63.33333333%;
@@ -124,21 +124,16 @@ $bgCol: #070b14;
         .brackets {
             visibility: hidden;
             h1 {
-                // font: 100 60px 'Spartan', sans-serif;
                 font: 300 160px 'Spartan', sans-serif;
-                // font-family: 'Lato', sans-serif;
                 transform: translateY(-20px);
-                // opacity: 1;
             }
         }
     }
 
     .icon-container {
-        
         display:flex;
         justify-content: center;
         margin: 0 auto 32px auto;
-        
     }
     .social-icon {
         // position:absolute;
@@ -156,6 +151,7 @@ $bgCol: #070b14;
         opacity: 0.3;
         width:60%;
     }
+
     .social-container {
         display:flex;
         justify-content: space-around;
@@ -167,12 +163,8 @@ $bgCol: #070b14;
         .small {
             max-width:120px;
         }
-
     }
-  
 }
-
-
 
 .crosshair {
 

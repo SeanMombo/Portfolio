@@ -7,19 +7,20 @@ $bgCol: #070b14;
 
 .portfolio-page {
   margin: 0;  
-  
+  height: calc(100vh - 51px);
   // display: flex;
   // flex-direction: column;
   // justify-content: center;
 
   // image-rendering: pixelated;
-  // background-image: url(../../img/rect11.png);
+  background-image: url(../../img2/stardust3.png);
   // background-size: cover;
-  // background-position: 50% 45%;
-  background-image: url(../../img/bgpillars.png);
+  // background-size: 2400px;
+  background-position: 50% 90%;
+  // background-image: url(../../img/bgpillars.png);
 
-    background-size: 1920px;
-    background-position: 50% 50%;
+
+    
   .project-container {
     // flex-direction: row;
     // display: flex;
@@ -27,8 +28,8 @@ $bgCol: #070b14;
   }
 
   .portfolio-left {
-    float:left;
-    width:0px;
+    float: left;
+    width: 0px;
     height: calc((100vh - 51px));
     background-image: url(../../img/bgpillars.png);
     background-size: 1920px;
@@ -39,7 +40,7 @@ $bgCol: #070b14;
     
     margin-left:740px;
     // width:50%;
-    max-width:1000px;
+    max-width:600px;
     margin:0 auto;
   }
 }
