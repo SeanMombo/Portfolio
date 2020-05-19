@@ -13,14 +13,13 @@ $bgCol: #070b14;
   // justify-content: center;
 
   // image-rendering: pixelated;
-  background-image: url(../../img2/stardust3.png);
+  // background-image: url(../../img2/stardust3.png);
   // background-size: cover;
   // background-size: 2400px;
   background-position: 50% 90%;
   // background-image: url(../../img/bgpillars.png);
 
 
-    
   .project-container {
     // flex-direction: row;
     // display: flex;
@@ -32,6 +31,7 @@ $bgCol: #070b14;
     width: 0px;
     height: calc((100vh - 51px));
     background-image: url(../../img/bgpillars.png);
+    background-size: 1920px;
     background-size: 1920px;
     background-position: 94.7% 50%;
   }

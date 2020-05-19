@@ -6,7 +6,6 @@ $bgCol: #070b14;
 // $bgCol: rgb(12, 11, 11);
 // $OrangeCol: #E94B3CFF;
 
-
 .main-banner {
     background: $bgCol  no-repeat;
     background-size: cover;
@@ -24,7 +23,6 @@ $bgCol: #070b14;
     justify-content: flex-start;
     flex-direction: column;
    
- 
     header {
         align-items: center;
         display: flex;
@@ -34,6 +32,7 @@ $bgCol: #070b14;
         position: relative;
         z-index: 1;
         margin-top:-20px;
+
         h1 {
             // text-align: left;
             // font: 100 70px 'Solway', serif;
@@ -52,11 +51,7 @@ $bgCol: #070b14;
             line-height: 1.5em;
             color: $whiteCol;
         }
-
-       
     }
-
-    
 
     .main-banner-content {
         margin: 0 auto;
@@ -69,10 +64,8 @@ $bgCol: #070b14;
         justify-content: flex-start;
         flex-wrap: wrap;
      
-
         h1 {
             text-align: center;
-         
             color: $whiteCol;
             font: 200 50px 'Solway', serif;
             
@@ -80,11 +73,8 @@ $bgCol: #070b14;
             letter-spacing: 0.03em;
             line-height: 1.2727272727em;
             margin-bottom: 16px;
-
-          
         }
 
-        
         .name-container {
             display:flex;
             justify-content: center;
@@ -138,15 +128,11 @@ $bgCol: #070b14;
         }
 
         .title-container {
-            // padding:40px;
-            // background:black;
-
             position:relative;
             width:100%;
             display:flex;
             align-items: flex-end;
             justify-content: space-between;
-            
             flex-direction: row;
             flex-wrap: wrap;
 
@@ -167,9 +153,7 @@ $bgCol: #070b14;
                 letter-spacing: 0.1em;
                 font-size:30px;
                 text-align: center;
-               
             }
-
         }
 
         .brackets {

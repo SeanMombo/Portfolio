@@ -4,16 +4,13 @@ import "./main-page.styles.scss"
 import CustomButton from '../custom-button/custom-button.component'
 
 // import linkedInSvg from '../../img/linkedin-logo.svg'
-
-
 class MainPage extends React.Component {
 
     render () {
         return (
         
             <div className='main-banner'>
-          
-                <header>
+                <div className='banner-header'>
                 
                     <div class="logo-container">  
                   
@@ -27,7 +24,7 @@ class MainPage extends React.Component {
                    
                     <h1>sean mombo</h1>
 
-                </header>
+                </div>
                 
                 <div class="main-banner-content">  
                     <div className="brackets noselect">
@@ -49,9 +46,9 @@ class MainPage extends React.Component {
                    
                 </div>
 
-                <div className="social-container">
+                {/* <div className="social-container">
                     <CustomButton href="/portfolio" text='View My Portfolio'/>
-                </div>
+                </div> */}
             </div>    
         )
     }

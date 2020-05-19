@@ -22,8 +22,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Navbar/>
+        <MainPage/>
+        <PortfolioPage/>
         
-        <Router>
+        {/* <Router>
           <Navbar/>
 
         
@@ -38,10 +41,11 @@ class App extends React.Component {
 
             <Route path="/">
               <MainPage/>
+              <PortfolioPage/>
             </Route>
           </Switch>
 
-        </Router>
+        </Router> */}
 
       </div>
     );

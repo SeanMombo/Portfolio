@@ -86,17 +86,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   min-height: 100%;
 }
 
-
-
-
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: $whiteCol;
     color: $bgCol;
     /* font-family: "GT Walsheim", sans-serif; */
-    height:100vh; 
-    // padding: 0 32px;
+
+    padding: 0 32px;
 }
 
 a {

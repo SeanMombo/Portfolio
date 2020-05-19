@@ -8,37 +8,36 @@ $bgCol: #070b14;
 // $bgCol: rgb(12, 11, 11);
 //  $OrangeCol: #E94B3CFF;
 
-
 .main-banner {
     image-rendering: pixelated;
     background: $bgCol  no-repeat;
     background: $bgCol url('../../img/main-banner-bg@2x.jpg') no-repeat;
     // background: #214261 url('../../img/bigcirclebg3.png') no-repeat;
     // background: $bgCol url('../../img/rectsmall2.png') no-repeat; THIS IS THE GOOD CIRCLE ONE
-    background: $bgCol url('../../img/rect6.png') no-repeat;
+    background: $bgCol url('../../img/circlespin2.png') no-repeat;
 
     background-size: 1920px;
-    background-position: center;
 
-    padding: 16px 9.39535% 64px;
+    background-position: 50% 50%;
+    margin: 0px;
+    padding: 0px;
     position: relative;
     text-align: center;
-    height: calc(100vh - 51px); 
 
-    display:flex;
+    margin-bottom: 128px;
+    height: 400px;
+    display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    
-    header {
+
+    .banner-header {
         align-items: center;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+
         // margin-bottom: 32px;
         position: relative;
         z-index: 1;
-        margin-top:-20px;
+
         h1 {
             // text-align: left;
             // font: 100 70px 'Solway', serif;
