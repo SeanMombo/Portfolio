@@ -6,7 +6,7 @@ $bgCol: #070b14;
 
 
 .portfolio-page {
-  margin: 0;  
+  margin: 32px;  
   height: calc(100vh - 51px);
   // display: flex;
   // flex-direction: column;
@@ -16,31 +16,39 @@ $bgCol: #070b14;
   // background-image: url(../../img2/stardust3.png);
   // background-size: cover;
   // background-size: 2400px;
-  background-position: 50% 90%;
+  // background-position: 50% 90%;
   // background-image: url(../../img/bgpillars.png);
+  background: $bgCol;
 
 
   .project-container {
     // flex-direction: row;
     // display: flex;
     // justify-content: center;
+    background: url(../../img//bigcanvasBackground3.png);
+    background-size: 1920px;
+    background-position: center;
+    image-rendering: pixelated;
+    padding-top: 32px;
   }
 
-  .portfolio-left {
-    float: left;
-    width: 0px;
-    height: calc((100vh - 51px));
-    background-image: url(../../img/bgpillars.png);
-    background-size: 1920px;
-    background-size: 1920px;
-    background-position: 94.7% 50%;
-  }
+  // .portfolio-left {
+  //   float: left;
+  //   width: 0px;
+  //   height: calc((100vh - 51px));
+  //   background-image: url(../../img/bgpillars.png);
+  //   background-size: 1920px;
+  //   background-size: 1920px;
+  //   background-position: 94.7% 50%;
+    
+  // }
 
   .portfolio-right {
     
-    margin-left:740px;
+    
     // width:50%;
-    max-width:600px;
-    margin:0 auto;
+    // max-width:900px;
+    
+
   }
 }

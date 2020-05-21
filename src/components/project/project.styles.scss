@@ -2,13 +2,12 @@ $w: #f1fcc2;
 $b: #009b96;
 $p: #ff0077;
 
-
 .project {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     display: block;
 
- 
+
     video {
         position: absolute;
         object-fit: fill;
@@ -16,10 +15,10 @@ $p: #ff0077;
 
     a {
         
-        // border: 16px solid rgb(0, 0, 0);
+        border: 32px solid rgb(0, 0, 0);
         // border-bottom:16px;
-        margin: 16px;
-       
+        margin: 32px;
+        margin-top: 0px;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
         overflow: hidden;
@@ -33,8 +32,6 @@ $p: #ff0077;
         // height: 368px;
         // width: 368px;
  
-
-  
         position: relative;
         text-align: left;
         outline: 0;

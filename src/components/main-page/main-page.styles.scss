@@ -11,20 +11,20 @@ $bgCol: #070b14;
 .main-banner {
     image-rendering: pixelated;
     background: $bgCol  no-repeat;
-    background: $bgCol url('../../img/main-banner-bg@2x.jpg') no-repeat;
+    // background: $bgCol url('../../img/main-banner-bg@2x.jpg') no-repeat;
     // background: #214261 url('../../img/bigcirclebg3.png') no-repeat;
-    // background: $bgCol url('../../img/rectsmall2.png') no-repeat; THIS IS THE GOOD CIRCLE ONE
-    background: $bgCol url('../../img/circlespin2.png') no-repeat;
+    background: $bgCol url('../../img/rectsmall2.png') no-repeat; //THIS IS THE GOOD CIRCLE ONE
+    // background: $bgCol url('../../img/circlespin2.png') no-repeat;
 
     background-size: 1920px;
 
     background-position: 50% 50%;
-    margin: 0px;
+    margin: 32px;
     padding: 0px;
     position: relative;
     text-align: center;
 
-    margin-bottom: 128px;
+    
     height: 400px;
     display: flex;
     flex-direction: column;
