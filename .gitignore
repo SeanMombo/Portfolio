@@ -2,10 +2,12 @@
 **.png
 **.mp4
 **.jpg
+**.psd
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
+
 
 # testing
 /coverage
