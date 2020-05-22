@@ -1,3 +1,5 @@
+@import "../../assets/variables";
+
 $w: #f1fcc2;
 $b: #009b96;
 $p: #ff0077;
@@ -15,10 +17,10 @@ $p: #ff0077;
 
     a {
         
-        border: 32px solid rgb(0, 0, 0);
+        // border: 32px solid rgb(0, 0, 0);
         // border-bottom:16px;
-        margin: 32px;
-        margin-top: 0px;
+        margin-bottom: $gap2;
+        
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
         overflow: hidden;
@@ -38,20 +40,21 @@ $p: #ff0077;
         transition: all 0.2s ease;
         text-decoration: none;
         color: #000000;
-        
 
-        &.bg1 {
-            background-color: rgb(84, 60, 107);
-            background-color: $b;
-        }
-        &.bg2 {
-            // background-color: rgb(54, 146, 89);
-            background-color: $p;
-        }
-        &.bg3 {
-            // background-color: rgb(202, 171, 31);
-            background-color:  $b;
-        }
+        background-color: $bgCol;
+
+        // &.bg1 {
+        //     background-color: rgb(84, 60, 107);
+        //     background-color: $b;
+        // }
+        // &.bg2 {
+        //     // background-color: rgb(54, 146, 89);
+        //     background-color: $p;
+        // }
+        // &.bg3 {
+        //     // background-color: rgb(202, 171, 31);
+        //     background-color:  $b;
+        // }
 
 
 

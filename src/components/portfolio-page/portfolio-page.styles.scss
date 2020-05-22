@@ -1,54 +1,55 @@
-$bgCol: rgb(8, 11, 15);
-$OrangeCol: #F2AA4CFF;
-$OrangeCol: #ff0078;
-$whiteCol: #fcf8eb;
-$bgCol: #070b14;
+@import "../../assets/variables";
 
 
 .portfolio-page {
-  margin: 32px;  
+  // margin: $gap1 0; 
   height: calc(100vh - 51px);
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
 
-  // image-rendering: pixelated;
-  // background-image: url(../../img2/stardust3.png);
-  // background-size: cover;
-  // background-size: 2400px;
-  // background-position: 50% 90%;
-  // background-image: url(../../img/bgpillars.png);
-  background: $bgCol;
+  background: $OrangeCol2;
+  
+  background-position: 50% 50%;
+  background-size: 1792px;
+  // background-color: black;
+  // border: 8px $OrangeCol2 solid;
 
-
+  h1 {
+    margin: 64px;
+    padding: 0;
+    color: $whiteCol;
+    font-family: "Solway", serif;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
   .project-container {
-    // flex-direction: row;
-    // display: flex;
-    // justify-content: center;
-    background: url(../../img//bigcanvasBackground3.png);
-    background-size: 1920px;
-    background-position: center;
-    image-rendering: pixelated;
-    padding-top: 32px;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    background: $OrangeCol2;
+    
+  }
+  
+  $w: 50%;
+  .portfolio-right {
+    width: $w;
+    // margin-left: $w;
+    margin: 0 auto;
+    background: url(../../img//bigcanvasBackground4.png);
   }
 
+  
   // .portfolio-left {
-  //   float: left;
-  //   width: 0px;
-  //   height: calc((100vh - 51px));
-  //   background-image: url(../../img/bgpillars.png);
-  //   background-size: 1920px;
-  //   background-size: 1920px;
-  //   background-position: 94.7% 50%;
-    
+  //   width: $w;
+  //   height:100%;
+  //   float:left;
+  //   width:$w;
+  // }
+  // .left-container {
+  //   opacity:1;
+  //   color:white;
+  //   height:100%;
+  //   margin:$gap2;
+  //   background-color: $bgCol;
   // }
 
-  .portfolio-right {
-    
-    
-    // width:50%;
-    // max-width:900px;
-    
 
-  }
 }

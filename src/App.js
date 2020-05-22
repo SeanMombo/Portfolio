@@ -22,8 +22,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        {/* <Navbar/> */}
         <Navbar/>
         <MainPage/>
+        
         <PortfolioPage/>
         
         {/* <Router>

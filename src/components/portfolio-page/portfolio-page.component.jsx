@@ -13,11 +13,20 @@ class PortfolioPage extends React.Component {
             <div className="portfolio-page">
 
                 {/* <div className="portfolio-left">
-                 
+                    
+                    <div className="project-container">
+                        <h1>Portfolio</h1>
+                        <Project bgImg={'bg1'} date="November 2019" title="LoL Set Builder" meta="Recreated as a <span>responsive web app</span>"/>
+
+                        <Project bgImg={'bg2'}date="December 2019" title="Algo-Visual" meta="Engineered an interactive algorithm visualizer"/>
+
+                        <Project bgImg={'bg3'}/>
+                    </div>
                 </div> */}
 
                 <div className="portfolio-right">
                     <div className="project-container">
+                        <h1>Selected Works</h1>
                         <Project bgImg={'bg1'} date="November 2019" title="LoL Set Builder" meta="Recreated as a <span>responsive web app</span>"/>
 
                         <Project bgImg={'bg2'}date="December 2019" title="Algo-Visual" meta="Engineered an interactive algorithm visualizer"/>
@@ -26,7 +35,8 @@ class PortfolioPage extends React.Component {
                         
                     </div>
                 </div>
-                
+
+
             </div>
         )
     }

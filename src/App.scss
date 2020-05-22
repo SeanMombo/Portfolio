@@ -1,6 +1,4 @@
-$bgCol: #01080e;
-$whiteCol: #070b14;
-$OrangeCol: #F2AA4CFF;
+@import "assets/variables.scss";
 
 
 @font-face {
@@ -29,53 +27,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
-// #root {
-//   height:100vh;
-//   display:flex;
-//   justify-content: center;
-//   align-content: center;
-//   flex-wrap: wrap;
-//   flex-direction: column;
-//   background: $bgCol;
-//   position: relative;
-
-
-//   image-rendering: pixelated;
-//   background: $bgCol url('./img/rect4.png') no-repeat;
-//   background-size: cover;
-//   background-position: center;
-
-//   // &::after {
-//   //   content: "";
-//   // image-rendering: pixelated;
-//   // background: url('./img/rect.png') no-repeat;
-//   // background-size: cover;
-//   // background-position: center;
-//   //   // opacity: 0.25;
-//   //   top: 0;
-//   //   left: 0;
-//   //   bottom: 0;
-//   //   right: 0;
-//   //   position: absolute;
-//   //   z-index: 1;   
-//   // }
-
-// }
-
 #root {
   // background: $bgCol url(./img/bigcanvasBackground.png);
   background-size: 2200px;
-  image-rendering: pixelated;
+  
 }
 
 .App {
-  
-  // display:flex;
-  // flex-direction: column;
-  // flex-wrap: wrap;
-  // justify-content: center;
-  // align-content: center;
-    // width:60vw;
+
   text-align: left;
   font-family: 'Spartan', sans-serif;
   font-size: 1rem;
@@ -93,11 +52,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: $whiteCol;
-    color: $bgCol;
-    /* font-family: "GT Walsheim", sans-serif; */
 
-    padding: 0 32px;
+    background: $bgCol;
+
+    background-position: 50% 50%;
+    color: $whiteCol;
+
+
+    padding: 0 $gap1;
+//     width: 80%;
+//     margin: 0 auto;
 }
 
 a {

@@ -1,9 +1,4 @@
-$bgCol: rgb(8, 11, 15);
-$OrangeCol: #F2AA4CFF;
-$OrangeCol: #ff0078;
-$whiteCol: #fcf8eb;
-$bgCol: #070b14;
-
+@import "../../assets/variables";
 
 // $bgCol: rgb(12, 11, 11);
 //  $OrangeCol: #E94B3CFF;
@@ -11,24 +6,28 @@ $bgCol: #070b14;
 .main-banner {
     image-rendering: pixelated;
     background: $bgCol  no-repeat;
-    // background: $bgCol url('../../img/main-banner-bg@2x.jpg') no-repeat;
-    // background: #214261 url('../../img/bigcirclebg3.png') no-repeat;
-    background: $bgCol url('../../img/rectsmall2.png') no-repeat; //THIS IS THE GOOD CIRCLE ONE
-    // background: $bgCol url('../../img/circlespin2.png') no-repeat;
 
-    background-size: 1920px;
+    background: $OrangeCol2 url('../../img/rect67.png') no-repeat; //THIS IS THE GOOD CIRCLE ONE
+    // background: $OrangeCol2 url('../../img/HomepageCircle2.png') no-repeat; //THIS IS THE GOOD CIRCLE ONE
+
+    background-size: 1792px;
 
     background-position: 50% 50%;
-    margin: 32px;
+    // margin-top: $gap1;
+
+
+    // margin: 32px 0;
     padding: 0px;
     position: relative;
     text-align: center;
 
+    height:550px;
+    height:650px;
     
-    height: 400px;
     display: flex;
     flex-direction: column;
-
+    align-content: center;
+    justify-content: center;
     .banner-header {
         align-items: center;
         display: flex;
@@ -37,7 +36,7 @@ $bgCol: #070b14;
         // margin-bottom: 32px;
         position: relative;
         z-index: 1;
-
+        height:110px;
         h1 {
             // text-align: left;
             // font: 100 70px 'Solway', serif;
@@ -69,7 +68,7 @@ $bgCol: #070b14;
                 position: absolute;
                 left: 50%;
                 margin-left: -115px;
-                margin-top: -120px;
+                margin-top: -25px;
 
                 fill:$whiteCol;
             }
@@ -83,33 +82,35 @@ $bgCol: #070b14;
         max-width: 772px;
         position: relative;
         
-        display:flex;
+        display: flex;
         justify-content: space-around;
+        flex-direction: column;
 
         h1 {
             text-align: center;
          
             color: $whiteCol;
-            font: 600 50px 'Solway', serif;
-        
+            // font: 600 50px 'Solway', serif;
+            font: 900 68px 'Spartan', sans-serif;
             letter-spacing: 0.03em;
             line-height: 1.2727272727em;
             margin-bottom: 16px;
 
             .span1 {
-                font: 400 16px 'Spartan', sans-serif;
-                
-            }
-            .span2 {
-                font: 300 40px 'Spartan', sans-serif;
-            
+                font-weight: 200;
             }
         }
 
-        p {
-            font: 300 18px 'Spartan', sans-serif;
+        h2 {
             color: $whiteCol;
-            margin: 0 auto 40px auto;
+            font: 500 44px 'Solway', sans-serif;
+        }
+
+        p {
+            // font: 300 20px 'Spartan', sans-serif;
+            font: 300 20px'Solway', sans-serif;
+            color: $whiteCol;
+            margin: 6px auto 40px auto;
             width: 63.33333333%;
             font-style: italic;
             line-height: 1.4545454545em; 
@@ -121,9 +122,9 @@ $bgCol: #070b14;
         }
 
         .brackets {
-            visibility: hidden;
+            // visibility: hidden;
             h1 {
-                font: 300 160px 'Spartan', sans-serif;
+                font: 600 90px 'Solway', sans-serif;
                 transform: translateY(-20px);
             }
         }
@@ -148,7 +149,7 @@ $bgCol: #070b14;
         border-style: dashed;
         margin-bottom:32px;
         opacity: 0.3;
-        width:60%;
+        width:68%;
     }
 
     .social-container {
@@ -188,93 +189,6 @@ $bgCol: #070b14;
         opacity:0.75;
     }
 }
-
-
-
-// .circle-container {
-//     // background-size: 161px;
-//     overflow: hidden;
-//     position: absolute;
-//     left: 0;
-//     top: 0;
-//     width: 100%;
-//     height: 100%;
-//     z-index: 0;
-//     transform: scale(4);
-//     image-rendering: pixelated;
-// }
-
-// .big-circle {
-//     position: absolute;
-    
-//     left: 50%;
-//     top: 50%;
-//     transform:  translate(-50%, -50%);
-    
-//     z-index: -1;
-// }
-
-// .big-circle img {
-//     animation: big-spin 12s linear infinite;
-// }
-
-// @keyframes big-spin {
-//     0% {
-//         transform: rotate(0deg);
-//     }
-//     100% {
-//         transform: rotate(360deg);
-//     }
-// }
-
-
-
-
-
-
-
-// $cornerWidth: 1px;
-// $cornerDist: 0px;
-// .hero-corner {
-//     top: $cornerDist;
-//     right: $cornerDist;
-//     z-index: 21;
-//     border-top: $cornerWidth solid;
-//     border-right: $cornerWidth solid;
-// }
-
-// .hero-corner2 {
-//     top: $cornerDist;
-//     left: $cornerDist;
-//     border-top: $cornerWidth solid;
-//     border-left: $cornerWidth solid;
-// }
-
-// .hero-corner3 {
-//     bottom: $cornerDist;
-//     right: $cornerDist;
-//     border-bottom: $cornerWidth solid;
-//     border-right: $cornerWidth solid;
-// }
-
-// .hero-corner4 {
-//     bottom: $cornerDist;
-//     left: $cornerDist;
-//     z-index: 21;
-//     border-left: $cornerWidth solid;
-//     border-bottom: $cornerWidth solid;
-// }
-
-
-
-// .hero-corner, .hero-corner2, .hero-corner3, .hero-corner4 {
-//     position: absolute;
-//     width: 64px;
-//     height: 64px;
-//     z-index: 21;
-//     border-color: $whiteCol;
-//     // border-radius: 2px;
-// }
 
 #myVideo {
     position: fixed;

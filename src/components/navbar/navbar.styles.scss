@@ -1,5 +1,4 @@
-$bgCol: #070b14;
-$whiteCol: #faf7eb;
+@import "../../assets/variables";
 
 .navbar {
     // position:fixed;
@@ -9,9 +8,14 @@ $whiteCol: #faf7eb;
 
     text-transform: lowercase;
     background-color: $bgCol;
+    // background: $bgCol url(../../img/bigcanvasBackground3.png);
+    background-size: 1920px;
+    background-position: 50% 50%;
+    // width:72%;
+    margin: 0 auto;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     
     align-content:center;
     text-align: center;
@@ -63,7 +67,6 @@ $whiteCol: #faf7eb;
     
 }
 
-
 header {
     align-items: center;
     display: flex;
@@ -73,6 +76,7 @@ header {
     position: relative;
     z-index: 1;
     margin-top:-20px;
+    
     h1 {
         // text-align: left;
         // font: 100 70px 'Solway', serif;
