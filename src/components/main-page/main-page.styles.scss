@@ -8,6 +8,7 @@
     background: $bgCol  no-repeat;
 
     background: $OrangeCol2 url('../../img/rect67.png') no-repeat; //THIS IS THE GOOD CIRCLE ONE
+    background: $OrangeCol2 url('../../img/bigcanvasBackground12.png') no-repeat; //THIS IS THE GOOD CIRCLE ONE
     // background: $OrangeCol2 url('../../img/HomepageCircle2.png') no-repeat; //THIS IS THE GOOD CIRCLE ONE
 
     background-size: 1792px;
@@ -22,12 +23,14 @@
     text-align: center;
 
     height:550px;
-    height:650px;
+    height:550px;
     
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    
+
     .banner-header {
         align-items: center;
         display: flex;

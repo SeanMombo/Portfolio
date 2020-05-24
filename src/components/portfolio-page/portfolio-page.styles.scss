@@ -2,11 +2,11 @@
 
 
 .portfolio-page {
-  // margin: $gap1 0; 
+  margin: $gap1 0; 
   height: calc(100vh - 51px);
 
   background: $OrangeCol2;
-  
+  // background: $OrangeCol2 url(../../img/bigcanvasBackground14.png);
   background-position: 50% 50%;
   background-size: 1792px;
   // background-color: black;
