@@ -4,6 +4,8 @@ import "./main-page.styles.scss"
 import CustomButton from '../custom-button/custom-button.component'
 import Navbar from '../navbar/navbar.component'
 // import linkedInSvg from '../../img/linkedin-logo.svg'
+
+import seanmombo from '../../img/SEANMOMBO2.png'
 class MainPage extends React.Component {
 
     render () {
@@ -25,7 +27,10 @@ class MainPage extends React.Component {
 
                 <br/><br/>
                     <div className="title-container">
-                        
+                    
+                    {/* <img src={seanmombo}/> */}
+                                         
+
                     <h1>
                         <span className='span1'>SEAN</span>MOMBO 
                     </h1>
@@ -36,6 +41,7 @@ class MainPage extends React.Component {
                         
                         
                         <p>& indie game entrepreneur</p>
+                       
                     </div>
                 </div>
                 

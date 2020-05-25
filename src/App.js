@@ -24,8 +24,10 @@ class App extends React.Component {
       <div className="App">
         {/* <Navbar/> */}
         <Navbar/>
-        <MainPage/>
         
+        <br/><br/><br/><br/>
+        <MainPage/>
+        <br/><br/><br/><br/>
         <PortfolioPage/>
         
         {/* <Router>

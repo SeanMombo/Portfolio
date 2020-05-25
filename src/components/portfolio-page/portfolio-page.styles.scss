@@ -2,54 +2,59 @@
 
 
 .portfolio-page {
-  margin: $gap1 0; 
+  margin: 32px 0; 
   height: calc(100vh - 51px);
 
   background: $OrangeCol2;
-  // background: $OrangeCol2 url(../../img/bigcanvasBackground14.png);
+  // background: $OrangeCol2 url(../../img/bigcanvasBackground16.png);
+  image-rendering: pixelated;
   background-position: 50% 50%;
   background-size: 1792px;
   // background-color: black;
   // border: 8px $OrangeCol2 solid;
-
+  // border-top: 1px $yellowCol solid;
+  
   h1 {
-    margin: 64px;
+    // margin: 64px;
     padding: 0;
     color: $whiteCol;
-    font-family: "Solway", serif;
-    font-weight: 800;
+    font-family: "Spartan", serif;
+    font-weight: 300;
+    // font-size: 50px;
     text-transform: uppercase;
+    
   }
   .project-container {
-    text-align:center;
+    text-align:left;
     display:flex;
     flex-direction: column;
-    background: $OrangeCol2;
+    // background: $OrangeCol2;
     
   }
   
-  $w: 50%;
+  $w: 1270px;
   .portfolio-right {
-    width: $w;
-    // margin-left: $w;
+    max-width: $w;
+    margin-left: $w;
     margin: 0 auto;
-    background: url(../../img//bigcanvasBackground4.png);
+    // background: url(../../img//bigcanvasBackground4.png);
   }
 
   
-  // .portfolio-left {
-  //   width: $w;
-  //   height:100%;
-  //   float:left;
-  //   width:$w;
-  // }
-  // .left-container {
-  //   opacity:1;
-  //   color:white;
-  //   height:100%;
-  //   margin:$gap2;
-  //   background-color: $bgCol;
-  // }
+  .portfolio-left {
+    width: $w;
+    height:100%;
+    float:left;
+
+  }
+  .left-container {
+    opacity:1;
+    color:white;
+    height:100%;
+    margin:$gap2;
+    width:$w;
+    background-color: $bgCol;
+  }
 
 
 }

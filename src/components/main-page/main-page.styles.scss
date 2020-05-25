@@ -5,13 +5,11 @@
 
 .main-banner {
     image-rendering: pixelated;
-    background: $bgCol  no-repeat;
+    background: $OrangeCol2  no-repeat;
 
-    background: $OrangeCol2 url('../../img/rect67.png') no-repeat; //THIS IS THE GOOD CIRCLE ONE
-    background: $OrangeCol2 url('../../img/bigcanvasBackground12.png') no-repeat; //THIS IS THE GOOD CIRCLE ONE
-    // background: $OrangeCol2 url('../../img/HomepageCircle2.png') no-repeat; //THIS IS THE GOOD CIRCLE ONE
+    background: $OrangeCol2 url('../../img/rect6.png') no-repeat; //THIS IS THE GOOD CIRCLE ONE
 
-    background-size: 1792px;
+    background-size: 1920px;
 
     background-position: 50% 50%;
     // margin-top: $gap1;
@@ -23,14 +21,23 @@
     text-align: center;
 
     height:550px;
-    height:550px;
-    
+    height:350px;
+
+    max-width:1400px;
+
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     
-
+    img {
+        width: 1792px;
+        margin-left:50%;
+        margin-top:50%;
+        transform: translate(-71%, -83%);
+        position: absolute;
+    }
     .banner-header {
         align-items: center;
         display: flex;
@@ -94,7 +101,7 @@
          
             color: $whiteCol;
             // font: 600 50px 'Solway', serif;
-            font: 900 68px 'Spartan', sans-serif;
+            font: 900 78px 'Spartan', sans-serif;
             letter-spacing: 0.03em;
             line-height: 1.2727272727em;
             margin-bottom: 16px;

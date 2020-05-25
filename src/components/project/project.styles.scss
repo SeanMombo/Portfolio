@@ -8,7 +8,9 @@ $p: #ff0077;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     display: block;
+    margin: 16px 0px;
 
+    background: $yellowCol;
 
     video {
         position: absolute;
@@ -16,10 +18,10 @@ $p: #ff0077;
     }
 
     a {
-        
+        margin:1px;
         // border: 32px solid rgb(0, 0, 0);
         // border-bottom:16px;
-        margin-bottom: $gap2;
+        
         
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
@@ -41,7 +43,7 @@ $p: #ff0077;
         text-decoration: none;
         color: #000000;
 
-        background-color: $bgCol;
+        background-color: $cardBg;
 
         // &.bg1 {
         //     background-color: rgb(84, 60, 107);

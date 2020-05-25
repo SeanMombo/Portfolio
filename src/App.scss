@@ -53,13 +53,13 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    background: $bgCol;
-
-    background-position: 50% 50%;
+    background: $OrangeCol2;
+    background-size: 1792px;
+    background-position: 100% 10%;
     color: $whiteCol;
 
 
-    padding: 0 $gap1;
+    padding: $gap1;
 //     width: 80%;
 //     margin: 0 auto;
 }

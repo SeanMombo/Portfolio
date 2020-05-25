@@ -1,19 +1,19 @@
 @import "../../assets/variables";
 
 .navbar {
-    // position:fixed;
-    // top:0;
-    // left:0;
-    // width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
 
     text-transform: lowercase;
-    background-color: $bgCol;
+    background-color: $OrangeCol2;
     // background: $bgCol url(../../img/bigcanvasBackground3.png);
     background-size: 1920px;
     background-position: 50% 50%;
     // width:72%;
     margin: 0 auto;
-
+    margin-bottom: $gap1;
     display: flex;
     justify-content: center;
     
@@ -26,7 +26,7 @@
         // padding-left:0px;
     }
 
-    // z-index:10;
+     z-index:10;
     
     a {
         font-size: 16px;
