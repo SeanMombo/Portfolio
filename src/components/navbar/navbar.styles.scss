@@ -1,114 +1,76 @@
 @import "../../assets/variables";
 
 .navbar {
+    
+    background-color: $OrangeCol2;
+    width:100%;
+    height:51px;
     position:fixed;
+    z-index:10;
     top:0;
     left:0;
-    width:100%;
-
-    text-transform: lowercase;
-    background-color: $OrangeCol2;
-    // background: $bgCol url(../../img/bigcanvasBackground3.png);
-    background-size: 1920px;
-    background-position: 50% 50%;
-    // width:72%;
-    margin: 0 auto;
-    margin-bottom: $gap1;
-    display: flex;
-    justify-content: center;
-    
-    align-content:center;
-    text-align: center;
-
-    .name {
+    .centerDiv {
         position:absolute;
-        left:32px;
-        // padding-left:0px;
-    }
+        top:0;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width:1270px;
+        // min-width:1270px;
+        text-transform: lowercase;
 
-     z-index:10;
-    
-    a {
-        font-size: 16px;
-        font-weight:400;
-        color: $whiteCol;
-        padding: 16px 16px;
-        position:relative;
-        // padding-right:0px;
-        // padding-left:32px;
-        z-index:1;
+        // margin: 0 auto;
+        margin-bottom: $gap1;
+        display: flex;
+        justify-content: center;
+        
+        align-content:center;
+        text-align: center;
 
-        display: inline-block;
-
-        &::after {
-            position:absolute;
-            content:'';
-            left: 50%;
-            bottom: 15px;
-            width:0%;
-            height:0%;
-            background-color:$whiteCol;
-            z-index:-1;
-            // transition: all ease 0.1s;
+        
+        z-index:10;
+        
+        .name {
+            position: absolute;
+            left: $gap1;
+            padding-left:0px;
+            z-index:10;
         }
+        
+        a {
+            font-size: 16px;
+            font-weight:400;
+            color: $whiteCol;
+            padding: 16px 16px;
+            position:relative;
+            // padding-right:0px;
+            // padding-left:32px;
+            z-index:1;
 
-        &:hover {
-            // color:black;
+            display: inline-block;
 
             &::after {
-                height:2%;
-                left: 10%;
-                width: 80%;
-                // transition: all ease 0.05s;
+                position:absolute;
+                content:'';
+                left: 50%;
+                bottom: 15px;
+                width:0%;
+                height:0%;
+                background-color:$whiteCol;
+                z-index:-1;
+                // transition: all ease 0.1s;
             }
-          
-        }
-    }
-    
-}
 
-header {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    // margin-bottom: 32px;
-    position: relative;
-    z-index: 1;
-    margin-top:-20px;
-    
-    h1 {
-        // text-align: left;
-        // font: 100 70px 'Solway', serif;
-        font: 400 25px 'Spartan', sans-serif;
-        font-weight:400;
+            &:hover {
+                // color:black;
 
-        color: $whiteCol;
-        text-align:left;
-        transform: translateY(-20px);
-    }
-    
-    .contact-link {
-        text-transform: uppercase;
-        font: 400 18px 'Spartan', sans-serif;
-        letter-spacing: .08em;
-        line-height: 1.5em;
-        color: $whiteCol;
-    }
-
-    .logo-container {
-
-        width: 150px;
-        height: 150px;
-
-        svg {
-            pointer-events:none;
-            width: 190px;
+                &::after {
+                    height:2%;
+                    left: 10%;
+                    width: 80%;
+                    // transition: all ease 0.05s;
+                }
             
-            position: absolute;
-            left: 50%;
-            margin-left: -115px;
-            margin-top: -120px;
+            }
         }
     }
 }

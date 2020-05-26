@@ -27,7 +27,8 @@ class App extends React.Component {
         
         <br/><br/><br/><br/>
         <MainPage/>
-        <br/><br/><br/><br/>
+        <br/><br/> <br/><br/>
+       
         <PortfolioPage/>
         
         {/* <Router>

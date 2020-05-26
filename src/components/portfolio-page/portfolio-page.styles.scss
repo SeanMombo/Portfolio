@@ -5,21 +5,25 @@
   margin: 32px 0; 
   height: calc(100vh - 51px);
 
-  background: $OrangeCol2;
+  // background: $OrangeCol2;
+
   // background: $OrangeCol2 url(../../img/bigcanvasBackground16.png);
-  image-rendering: pixelated;
-  background-position: 50% 50%;
-  background-size: 1792px;
+  // image-rendering: pixelated;
+  // background-position: 50% 50%;
+  // background-size: 1792px;
+
   // background-color: black;
   // border: 8px $OrangeCol2 solid;
   // border-top: 1px $yellowCol solid;
   
   h1 {
     // margin: 64px;
+    transform: translateX(6px);
     padding: 0;
     color: $whiteCol;
     font-family: "Spartan", serif;
-    font-weight: 300;
+    font-weight: 500;
+    font-size:  23px;
     // font-size: 50px;
     text-transform: uppercase;
     
@@ -29,7 +33,11 @@
     display:flex;
     flex-direction: column;
     // background: $OrangeCol2;
-    
+    // background: url(../../img//bigcanvasBackground14.png);
+    background-position: 50% 50%;
+    background-size: 1792px;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   
   $w: 1270px;
@@ -37,7 +45,8 @@
     max-width: $w;
     margin-left: $w;
     margin: 0 auto;
-    // background: url(../../img//bigcanvasBackground4.png);
+    
+    
   }
 
   

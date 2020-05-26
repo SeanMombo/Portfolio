@@ -5,12 +5,14 @@
 
 .main-banner {
     image-rendering: pixelated;
-    background: $OrangeCol2  no-repeat;
+    image-rendering: -moz-crisp-edges;
+    // background: $OrangeCol2  no-repeat;
 
-    background: $OrangeCol2 url('../../img/rect6.png') no-repeat; //THIS IS THE GOOD CIRCLE ONE
+    background: url('../../img/rect6.png') no-repeat; //THIS IS THE GOOD CIRCLE ONE
+    // background: url('../../img/watercolor-10.png') no-repeat; //THIS IS THE GOOD CIRCLE ONE
 
     background-size: 1920px;
-
+    // background-size: cover;
     background-position: 50% 50%;
     // margin-top: $gap1;
 
@@ -159,7 +161,7 @@
         border-style: dashed;
         margin-bottom:32px;
         opacity: 0.3;
-        width:68%;
+        width:77%;
     }
 
     .social-container {

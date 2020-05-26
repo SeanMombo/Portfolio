@@ -4,46 +4,48 @@ $w: #f1fcc2;
 $b: #009b96;
 $p: #ff0077;
 
+
+$t: 0.3s;
 .project {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    -webkit-backface-visibility: hidden;
     display: block;
-    margin: 16px 0px;
+    margin:8px;
+    
+    
+    background: #8f6b30 url(../../img/watercolor-82.png);
+    background-size:1920px;
+    background-position:75% 85%;
+ 
 
-    background: $yellowCol;
+    transition-property: transform, box-shadow, background-image;
+    transition-duration: $t;
 
-    video {
-        position: absolute;
-        object-fit: fill;
-    }
 
     a {
-        margin:1px;
-        // border: 32px solid rgb(0, 0, 0);
-        // border-bottom:16px;
-        
-        
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizeLegibility;
+        // margin: 16px 16px;
+        image-rendering: auto;
+        // border: 4px $yellowCol2 solid;
+        // -webkit-font-smoothing: antialiased;
+        // text-rendering: optimizeLegibility;
         overflow: hidden;
         padding: 0 16px;
 
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         height: 270px;
-        // height: calc((100vh  /3)- 51px);
-        // height: 368px;
-        // width: 368px;
+        
  
         position: relative;
         text-align: left;
         outline: 0;
-        transition: all 0.2s ease;
+        // transition: all 0.2s ease;
         text-decoration: none;
         color: #000000;
 
-        background-color: $cardBg;
+        // background-color: $bgCol;
 
         // &.bg1 {
         //     background-color: rgb(84, 60, 107);
@@ -58,7 +60,15 @@ $p: #ff0077;
         //     background-color:  $b;
         // }
 
-
+           
+    video {
+        position: absolute;
+        left:-100px;
+        top:-150px;
+        object-fit: fill;
+        // width: 600px;
+        // height: 100%;
+    }
 
         .background {
             padding:16px;
@@ -68,25 +78,24 @@ $p: #ff0077;
             height: 100%;
             // position: absolute;
             &.bg1 {
-                
+                    
+            -webkit-transition: background-size $t;
+            transition: background-size $t;
                 // background: url(../../img2/LeagueBanner.png);
                 background: url(../../img2/LeaguePcMobile3.png);
+                background: url(../../img2/LeaguePcMobile3d1.png);
                 
-                background-position: 60% 50%;
+                background-position: 50% 40%;
                 background-repeat: no-repeat;
-                background-size: 570px;
-                &:hover {
-    
-                }
+                background-size: 970px;
+
             }
 
             &.bg2 {
                 background: url(../../img2/LeaguePcMobile5.png);
                 background-position: 50% 30%;
                 background-size: 650px;
-                &:hover {
-                
-                }
+
             }
 
             &.bg3 {
@@ -105,39 +114,49 @@ $p: #ff0077;
 
         
 
-        &::after {
-            transition: all .3s ease;
-            background:black;
-            opacity: 0;
-            position: absolute;
-            content:'';
-            width:100%;
-            height:100%;
-        }
-
-        // &:hover {
-        //     &::after {
-        //         opacity: 1;
-        //     }
-        //     .project-info {
-        //         opacity:1;
-        //     }
+        // &::after {
+        //     // transition: all .3s ease;
+        //     background:black;
+        //     opacity: 0;
+        //     position: absolute;
+        //     content:'';
+        //     width:100%;
+        //     height:100%;
         // }
 
-        // .background {
-        //     background-color:red;
-        // }
+  
     }
 
+    &:hover{
+        transform: translateY(-4px);
+        box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.8);
+        // background: url(../../img/bigcanvasBackground4.png);
+        // background: rgb(13, 50, 94);
+        // background-size: 1792px;
+        // background-position: center;
+        // background: black;
+
+        .background {
+            &.bg1 {
+
+                // background: url(../../img2/LeaguePcMobile3d2.png);
+                    
+                background-position: 50% 40%;
+                background-repeat: no-repeat;
+                background-size: 1000px;
+            }
+            
+        }
+    }
 
     .project-info {
-        transition: all .3s ease;
+        // transition: all .3s ease;
         opacity:1;
         padding:16px;
         position: relative;
         color: #000000;
         z-index:1;      
-        color: $w;
+        color: $whiteCol;
     }
 
     .project-date{
@@ -148,9 +167,12 @@ $p: #ff0077;
     }
 
     .project-title {
-        font: 500 30px 'Solway', serif;
+        font: 500 40px 'Solway', serif;
         // font: 900 18px 'spartan', sans-serif;
-        line-height: 1.5em;
+        line-height: 1em;
+        margin-bottom:32px;
+        color:black;
+        text-transform: uppercase;
     }
 
     p {
@@ -158,15 +180,22 @@ $p: #ff0077;
 
         font: 500 20px 'spartan', sans-serif;
         max-width: 500px;
+        
 
-        span {
-            color: $p;
-            font-weight: 600;
-        }
-        margin-bottom:32px;
+    }
+
+    .spanPink {
+        color: $OrangeCol;
+        font-weight: 600;
     }
 
     .hover-hype-text {
+        
+    }
+
+    h1 {
+        color: $OrangeCol2;
+        font: 500 90px 'spartan', sans-serif;
         
     }
 }

@@ -13,12 +13,16 @@ const Navbar = () => (
         <Link to="/">games</Link>
         <Link to="/">contact</Link>
         <Link to="/">resume</Link> */}
-        <a className="navButton name" href="/#">sean mombo</a> 
-        <a className="navButton" href="/#">About</a>
-        <a className="navButton" href="/#">portfolio</a>
-        <a className="navButton" href="/#">games</a>
-        <a className="navButton" href="/#">contact</a>
-        <a className="navButton" href="/#">resume</a>
+        
+        <div className='centerDiv'>
+            {/* <a className="navButton name" href="/#">sean mombo</a>  */}
+            <a className="navButton" href="/#">About</a>
+            {/* <a className="navButton" href="/#">portfolio</a> */}
+            <a className="navButton" href="/#">games</a>
+            <a className="navButton" href="/#">contact</a>
+            <a className="navButton" href="/#">resume</a>
+    
+        </div>
     </div>
 )
 
