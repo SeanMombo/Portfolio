@@ -13,13 +13,51 @@ $t: 0.3s;
     display: block;
     margin:8px;
     
-    
-    background: #8f6b30 url(../../img/watercolor-82.png);
-    background-size:1920px;
-    background-position:75% 85%;
- 
+    .bg1 {
+        background: #8f6b30 url(../../img/watercolor-82.png);
+        background-size:1920px;
+        background-position:75% 85%;
+        
+        .project-title{
+            color:black;
+        }
 
-    transition-property: transform, box-shadow, background-image;
+        p {
+            color: black;
+            font-family: 'spartan', sans-serif; font-weight: 700;
+            max-width: 500px;
+            
+        }
+    
+        .spanPink {
+            color: $OrangeCol;
+            font-weight: 700;
+        }
+    }
+    
+    .bg2 {
+        background: #8f6b30 url(../../img/watercolor-83.png);
+        background-size:1920px;
+        background-position:75% 85%;
+
+        .project-title, p{
+            color:$whiteCol;
+        }
+        p {
+            color: $whiteCol;
+            font-family: 'spartan', sans-serif; 
+            font-weight: 500;
+            max-width: 500px;
+            
+        }
+    
+        .spanPink {
+            color: $OrangeCol;
+            font-weight: 600;
+        }
+    }
+
+    transition-property: transform, box-shadow, background-image, background-size, background-position;
     transition-duration: $t;
 
 
@@ -33,7 +71,7 @@ $t: 0.3s;
         padding: 0 16px;
 
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         height: 270px;
         
@@ -77,24 +115,25 @@ $t: 0.3s;
             width: 600px;
             height: 100%;
             // position: absolute;
+            -webkit-transition: all $t;
+            transition: all $t;
+
             &.bg1 {
                     
-            -webkit-transition: background-size $t;
-            transition: background-size $t;
-                // background: url(../../img2/LeagueBanner.png);
-                background: url(../../img2/LeaguePcMobile3.png);
-                background: url(../../img2/LeaguePcMobile3d1.png);
+                background: url(../../img2/LeaguePcMobile3d.png);
                 
-                background-position: 50% 40%;
+                background-position: 50% 30%;
                 background-repeat: no-repeat;
-                background-size: 970px;
+                background-size: 770px;
 
             }
 
             &.bg2 {
-                background: url(../../img2/LeaguePcMobile5.png);
+                background: url(../../img2/AlgoPcMobile3d.png);
+                
                 background-position: 50% 30%;
-                background-size: 650px;
+                background-repeat: no-repeat;
+                background-size: 770px;
 
             }
 
@@ -105,6 +144,10 @@ $t: 0.3s;
                 background-size: 700px;
             }
             
+            img {
+                width:770px;
+                height:100%;
+            }
         }
 
 
@@ -137,15 +180,15 @@ $t: 0.3s;
         // background: black;
 
         .background {
-            &.bg1 {
+            &.bg1, &.bg2 {
 
                 // background: url(../../img2/LeaguePcMobile3d2.png);
                     
-                background-position: 50% 40%;
+                background-position: 50% 30%;
                 background-repeat: no-repeat;
-                background-size: 1000px;
+                background-size: 790px;
             }
-            
+           
         }
     }
 
@@ -171,23 +214,13 @@ $t: 0.3s;
         // font: 900 18px 'spartan', sans-serif;
         line-height: 1em;
         margin-bottom:32px;
-        color:black;
-        text-transform: uppercase;
-    }
-
-    p {
-        // font: 900 18px 'spartan', sans-serif;
-
-        font: 500 20px 'spartan', sans-serif;
-        max-width: 500px;
         
+        text-transform: uppercase;
 
+        
     }
 
-    .spanPink {
-        color: $OrangeCol;
-        font-weight: 600;
-    }
+   
 
     .hover-hype-text {
         
