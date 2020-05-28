@@ -1,8 +1,8 @@
 import React from 'react';
 
 import "./portfolio-page.styles.scss"
-import CustomButton from '../custom-button/custom-button.component'
-import overlayImg from '../../img/col1.png'
+// import CustomButton from '../custom-button/custom-button.component'
+// import overlayImg from '../../img/col1.png'
 import Project from '../project/project.component'
 
 import algo from '../../img/algo.mp4'
@@ -37,7 +37,7 @@ class PortfolioPage extends React.Component {
 
                         <Project num={2} bgImg={'bg2'} video={lol} date="December 2019" title="Algo-Visual" meta="Engineered an interactive algorithm visualizer"/>
 
-                        <Project num={3} bgImg={'bg3'} video={lol} /> 
+                        <Project num={3} bgImg={'bg3'} video={lol} title="CRWN CLOTHING" meta=""/> 
                         
                     </div>
                 </div>

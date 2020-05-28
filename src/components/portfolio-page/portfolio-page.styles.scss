@@ -3,7 +3,8 @@
 
 .portfolio-page {
   margin: 32px 0; 
-  height: calc(100vh - 51px);
+  // height: calc(100vh - 51px);
+  height:100%;
 
   // background: $OrangeCol2;
 
@@ -21,12 +22,15 @@
     transform: translateX(6px);
     padding: 0;
     color: $whiteCol;
-    font-family: "Spartan", serif;
+    font-family: "Spartan", sans-serif;
     font-weight: 500;
     font-size:  23px;
     // font-size: 50px;
     text-transform: uppercase;
-    
+
+    @media screen and (max-width: 1000px) {
+      text-align:center;
+    }
   }
   .project-container {
     text-align:left;
@@ -43,27 +47,26 @@
   $w: 1270px;
   .portfolio-right {
     max-width: $w;
+ 
     margin-left: $w;
     margin: 0 auto;
-    
-    
   }
 
   
-  .portfolio-left {
-    width: $w;
-    height:100%;
-    float:left;
+  // .portfolio-left {
+  //   width: $w;
+  //   height:100%;
+  //   float:left;
 
-  }
-  .left-container {
-    opacity:1;
-    color:white;
-    height:100%;
-    margin:$gap2;
-    width:$w;
-    background-color: $bgCol;
-  }
+  // }
+  // .left-container {
+  //   opacity:1;
+  //   color:white;
+  //   height:100%;
+  //   margin:$gap2;
+  //   width:$w;
+  //   background-color: $bgCol;
+  // }
 
 
 }

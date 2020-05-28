@@ -1,17 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.scss';
 
-import { BrowserRouter as Router,
-  Switch,
-  Route,
-  Link} from 'react-router-dom'
+// import { BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link} from 'react-router-dom'
 
 import MainPage from './components/main-page/main-page.component';
 import PortfolioPage from './components/portfolio-page/portfolio-page.component'
 // import MainHeader2 from './components/main-banner2/main-banner2.component';
 import Navbar from './components/navbar/navbar.component'
-import AboutPage from './components/about-page/about-page.component'
+// import AboutPage from './components/about-page/about-page.component'
 
 class App extends React.Component {
 
@@ -25,9 +25,9 @@ class App extends React.Component {
         {/* <Navbar/> */}
         <Navbar/>
         
-        <br/><br/><br/><br/>
+        
         <MainPage/>
-        <br/><br/> <br/><br/>
+        
        
         <PortfolioPage/>
         

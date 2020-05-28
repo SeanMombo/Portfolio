@@ -1,11 +1,11 @@
 import React from 'react';
 
 import "./main-page.styles.scss"
-import CustomButton from '../custom-button/custom-button.component'
-import Navbar from '../navbar/navbar.component'
+// import CustomButton from '../custom-button/custom-button.component'
+// import Navbar from '../navbar/navbar.component'
 // import linkedInSvg from '../../img/linkedin-logo.svg'
 
-import seanmombo from '../../img/SEANMOMBO2.png'
+// import seanmombo from '../../img/SEANMOMBO2.png'
 class MainPage extends React.Component {
 
     render () {
