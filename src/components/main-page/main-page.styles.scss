@@ -11,6 +11,10 @@
     background: url('../../img/rect6.png') no-repeat; //THIS IS THE GOOD CIRCLE ONE
     // background: url('../../img/watercolor-10.png') no-repeat; //THIS IS THE GOOD CIRCLE ONE
 
+    // @media screen and (max-width: 1000px) {
+    //     background: url('../../img/circlespin3.png') no-repeat;
+    // }
+
     background-size: 1920px;
     // background-size: cover;
     background-position: 50% 50%;
@@ -33,9 +37,19 @@
     flex-direction: column;
     align-content: center;
     justify-content: center;
+
+    
+    
+    @media screen and (max-width: 1000px) {
+        height:100%;
+        margin: 16px auto;
+        
+    }
+
     @media screen and (max-width: 700px) {
         height:100%;
         margin: 16px auto;
+        margin-top:32px;
     }
 
     img {

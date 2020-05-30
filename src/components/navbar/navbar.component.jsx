@@ -21,8 +21,9 @@ const Navbar = () => (
             <a className="navButton" href="/#">games</a>
             <a className="navButton" href="/#">contact</a>
             <a className="navButton" href="/#">resume</a>
-    
+  
         </div>
+
     </div>
 )
 

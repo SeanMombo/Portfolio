@@ -29,7 +29,9 @@ class PortfolioPage extends React.Component {
                     </div>
                 </div> */}
                 {/* const meta1 = (Recreated as a <span>responsive web app</span>); */}
+                
                 <div className="portfolio-right">
+                <hr/>
                     <h1>Selected Works</h1>
                     <div className="project-container">
                         

@@ -4,7 +4,6 @@ $w: #f1fcc2;
 $b: #009b96;
 $p: #ff0077;
 
-
 $t: 0.3s;
 .project {
     -webkit-font-smoothing: antialiased;
@@ -12,8 +11,10 @@ $t: 0.3s;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display: block;
+
     margin:8px;
-    
+    margin-top:0px;
+
     .project-info-container {
         display:flex;
         justify-content: space-around;
@@ -23,9 +24,9 @@ $t: 0.3s;
     }
     
     .bg1, .bg2, .bg3 {
-        background: black url(../../img/watercolor-82.png);
-        background-size:1920px;
-        background-position: 70% 88%;
+        background: #f5f5f0 url(../../img/watercolor-89.jpg) no-repeat;
+        background-size: 800px;
+        background-position: 120% 440%;
         
         .project-title{
             color:black;
@@ -63,9 +64,9 @@ $t: 0.3s;
    
     @media screen and (max-width: 1000px) {
         .bg1, .bg2, .bg3 {
-            background: black url(../../img/watercolor-89.png);
-            background-size:2000px;
-            background-position: 50% 85%;
+            background: #f5f5f0 url(../../img/watercolor-89.jpg) no-repeat;
+            background-size: 800px;
+            background-position: 60% 190%;
         }
 
       
@@ -109,7 +110,7 @@ $t: 0.3s;
 
         @media screen and (max-width: 1000px) {
             flex-direction:column;
-            height: 450px;
+            height: 400px;
             text-align: center;
 
             .project-info-container {
@@ -141,27 +142,27 @@ $t: 0.3s;
 
             &.bg1 {
                     
-                background: url(../../img2/LeaguePcMobile3d3.png);
-                background-position: 50% 30%;
+                background: url(../../img2/LeaguePcMobile3d3-min.png);
+                background-position: 50% 80%;
                 background-repeat: no-repeat;
-                background-size: 770px;
+                background-size: 470px;
 
             }
 
             &.bg2 {
-                background: url(../../img2/AlgoPcMobile3d2.png);
+                background: url(../../img2/AlgoPcMobile3d22-min.png);
                 
-                background-position: 50% 30%;
+                background-position: 50% 80%;
                 background-repeat: no-repeat;
-                background-size: 770px;
+                background-size: 470px;
 
             }
 
             &.bg3 {
-                background: url(../../img2/CrownPcMobile3d2.png);
+                background: url(../../img2/CrownPcMobile3d2-min.png);
+                background-position: 50% 80%;
                 background-repeat: no-repeat;
-                background-position: 59% 30%;
-                background-size: 770px;
+                background-size: 470px;
             }
             
             img {
@@ -171,27 +172,29 @@ $t: 0.3s;
 
             @media screen and (max-width: 1000px) {
                 height:530px;
-                &.bg1, &.bg2{
-                    background-position: 50% 42%;
+                &.bg1, &.bg2, &.bg3 {
+                    background-size: 400px;
+                    background-position: 50% 80%;
                 } 
-                
-                &.bg3 {
-                    background-position: 58% 42%;
-                }
+
             }
 
             @media screen and (max-width: 650px) {
                 
-                &.bg1, &.bg2{
+                &.bg1, &.bg2, &.bg3{
                     
-                    background-size: calc(120vw);
-                    background-position: 50% 50%;
+                    background-size: 400px;
+                    background-position: 50% 80%;
                 } 
+            }
+
+            @media screen and (max-width: 490px) {
                 
-                &.bg3 {
-                    background-size: calc(120vw);
-                    background-position: 20% 50%;
-                }
+                &.bg1, &.bg2, &.bg3{
+                    
+                    background-size: 80vw;
+                    background-position: 50% 80%;
+                } 
             }
         }
     }
@@ -202,15 +205,14 @@ $t: 0.3s;
 
         .background {
             &.bg1, &.bg2 {
-                background-position: 50% 30%;
+                background-position: 50% 80%;
                 background-repeat: no-repeat;
-                background-size: 790px;
+                background-size: 480px;
             }
             &.bg3 {
-
-                background-position: 59% 30%;
+                background-position: 50% 80%;
                 background-repeat: no-repeat;
-                background-size: 790px;
+                background-size: 480px;
             }
             &.bg1, &.bg2, &.bg3 {
                 @media screen and (max-width: 1000px) {
@@ -230,7 +232,7 @@ $t: 0.3s;
         padding:16px;
         position: relative;
         color: #000000;
-        z-index:1;      
+        // z-index:1;      
         color: $whiteCol;
     }
 
@@ -264,3 +266,84 @@ $t: 0.3s;
     }
 }
 
+video {
+    width: 100%;
+    height:80%;
+    margin: 0 auto;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+.modal-content-body{
+    display:flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    align-content: flex-start;
+    
+}
+
+.modal-header {
+    display:flex;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.modal-title {
+    color: $OrangeCol2;
+    font: 900 45px 'spartan', sans-serif;
+    text-transform: uppercase;
+   
+}
+.project-modal {
+    width: 90%;
+    max-width:1400px;
+    margin: 0 auto;
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width:1400px;
+        margin: 1.75rem auto;
+    }
+}
+
+.modal-open[style] {
+    padding-right: 0px !important;
+}
+
+.modal {
+    padding-right: 0px !important;
+}
+
+.buttonRow {
+
+}
+
+Button {
+    margin: 16px 32px 0px 0px;
+
+
+    font: 900 45px 'spartan', sans-serif;
+
+    font-size: 20px !important;
+    border-radius: 0px;
+
+}
+.btn-primary, .btn-danger {
+    border-radius: 0px;
+}
+
+.btn-outline-dark {
+    color: #fff !important;
+    background-color: #040405;
+    border-color: #040405;
+    border-radius: 0px;
+}
+
+
+.btn-outline-dark:hover {
+    color: #040405;
+    background-color: #fff;
+    // border-color: #fff;
+    border-radius: 0px;
+}

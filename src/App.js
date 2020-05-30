@@ -9,9 +9,8 @@ import './App.scss';
 
 import MainPage from './components/main-page/main-page.component';
 import PortfolioPage from './components/portfolio-page/portfolio-page.component'
-// import MainHeader2 from './components/main-banner2/main-banner2.component';
 import Navbar from './components/navbar/navbar.component'
-// import AboutPage from './components/about-page/about-page.component'
+// import ProjectModal from './components/project-modal/project-modal.component'
 
 class App extends React.Component {
 
@@ -24,11 +23,9 @@ class App extends React.Component {
       <div className="App">
         {/* <Navbar/> */}
         <Navbar/>
-        
-        
+        <br/>
+   
         <MainPage/>
-        
-       
         <PortfolioPage/>
         
         {/* <Router>

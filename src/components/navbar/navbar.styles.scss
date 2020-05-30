@@ -7,9 +7,10 @@
     height:51px;
     
     z-index:1;
-    position:absolute;
+    position:fixed;
     left:0;
     top:0;  
+    
     .centerDiv {
         position:absolute;
         top:0;
@@ -46,7 +47,7 @@
             // padding-right:0px;
             // padding-left:32px;
             z-index:1;
-
+            text-decoration: none;
             display: inline-block;
 
             &::after {
