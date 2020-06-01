@@ -280,7 +280,25 @@ video {
     flex-direction: column;
     // flex-wrap: wrap;
     align-content: flex-start;
-    
+
+    p {
+        font: 500 16px 'Spartan', sans-serif;
+        font-size: 18px;
+        line-height: 1.4545454545em; 
+        color:black;
+      }
+
+    h1 {
+        color:black;
+        margin-bottom: 8px;
+        font-weight:700;
+    }
+
+    hr {
+        border-color: black;
+        border-top: 1px black solid;
+        width:100%;
+    }
 }
 
 .modal-header {
@@ -296,7 +314,7 @@ video {
    
 }
 .project-modal {
-    width: 90%;
+    width: 60%;
     max-width:1400px;
     margin: 0 auto;
 }
@@ -306,7 +324,9 @@ video {
         margin: 1.75rem auto;
     }
 }
-
+.modal-backdrop.show {
+    opacity: 0.9;
+}
 .modal-open[style] {
     padding-right: 0px !important;
 }

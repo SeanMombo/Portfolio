@@ -34,10 +34,16 @@ const ModalP1 = ({ title }) => (
                 Source Code
             </Button>
         </div>
+        <hr></hr>
 
-            <p>
-                
-            </p>
+        <h1>Description:</h1>
+        <p>     
+            League of Legends is one of the most popular games in the world. An important feature of gameplay is predefining loadouts/item-sets that you will use in game. 
+            The game client is large in size and only works on desktop.
+            Set builder web apps existed — but did not work on mobile. 
+            <br/><br/>The goal of this project was to fill a gap in mobile functionality. 
+        </p>
+
     </div>
 );
 
