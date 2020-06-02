@@ -23,26 +23,33 @@ class MainPage extends React.Component {
                     </div>
                 </div> */}
                 
-                <div class="main-banner-content">  
-
-                <br/><br/>
-                    <div className="title-container">
                     
+                <div class="main-banner-content">  
+                
+                {/* <br/><br/> */}
+                    <div className="title-container">
+                    <p className="email">sean@mombourquette.com</p>
+                    <hr/>
                     {/* <img src={seanmombo}/> */}
                                          
-
+                    
                     <h1>
                         <span className='span1'>SEAN</span>MOMBO 
                     </h1>
-                    <hr></hr>
+                    
+                    {/* <hr/> */}
+                    
                         <h2>
                             — Frontend Developer —
                         </h2>
-                        
+                        {/* <h3>
+                        & indie game entrepreneur
+                        </h3> */}
                         
                         <p>& indie game entrepreneur</p>
-                       
+                        
                     </div>
+                    
                 </div>
                 
                 {/* <div className='banner-header'>
@@ -59,8 +66,7 @@ class MainPage extends React.Component {
                     <CustomButton href="/portfolio" text='Portfolio'/>
                     <CustomButton href="/portfolio" text='Indie Games'/>
                 </div> */}
-                
-               
+   
             </div>    
         )
     }

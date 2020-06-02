@@ -1,5 +1,6 @@
 @import "../../assets/variables";
-
+ 
+$w: 1270px;
 
 .portfolio-page {
   margin: 32px 0; 
@@ -54,8 +55,7 @@
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
-  
-  $w: 1270px;
+ 
   .portfolio-right {
     max-width: $w;
  
@@ -80,4 +80,18 @@
   // }
 
 
+}
+
+.contact-info {
+  max-width: $w;
+  margin: 0 auto;
+  display:flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  font-size:  23px;
 }

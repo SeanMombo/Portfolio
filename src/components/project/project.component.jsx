@@ -1,9 +1,15 @@
 import React, {useState} from 'react';
 import {Modal, Button} from 'react-bootstrap';
+import ReactPlayer from 'react-player';
+// import VideoThumbnail from 'react-video-thumbnail';
 
 import "./project.styles.scss"
 // import mockupShadow from '../../img2/MobileMockupShadow.png'
 import lolVideo from '../../img/lolsetrecording.mp4';
+import algoVideo from '../../img/AlgoDemo2.mp4';
+import crwnVideo from '../../img/CrwnDemo.mp4';
+import crownThumb from '../../img/5.png';
+
 
 const P1 = () => (
     <>
@@ -16,14 +22,19 @@ const P2 = () => (
 )
 
 const P3 = () => (
-    <p className="project-meta">Expanded skillset into fullstack by creating an <span className="spanPink">ecommerce app</span></p>
+    <p className="project-meta"> Built an <span className="spanPink">ecommerce app</span> as a Udemy course project. Expanded skillset into fullstack</p>
 )
 
+const vidStyle = {
+    width: '100%',
+    height: '80%',
+    margin: '0 auto'
+}
 const ModalP1 = ({ title }) => (
     <div className="modal-content-body">
 
-        <video id="video" loop="loop" controls>
-            <source src={lolVideo} type="video/mp4"></source>
+        <video id="video" loop="loop" controls preload="metadata">
+            <source src={lolVideo + '#t=0.5'} type="video/mp4"></source>
         </video> 
         
         <div className="buttonRow"> 
@@ -36,39 +47,100 @@ const ModalP1 = ({ title }) => (
         </div>
         <hr></hr>
 
-        <h1>Description:</h1>
+        <h1>Context:</h1>
         <p>     
-            League of Legends is one of the most popular games in the world. An important feature of gameplay is predefining loadouts/item-sets that you will use in game. 
-            The game client is large in size and only works on desktop.
-            Set builder web apps existed — but did not work on mobile. 
-            <br/><br/>The goal of this project was to fill a gap in mobile functionality. 
+            League of Legends is one of the most popular games in the world.
+            Third party item-set builder web apps existed — but did not work on mobile. 
+            <br/><br/>The goal of this project was to fill this gap in mobile functionality. 
         </p>
-
+        <h1>Process:</h1>
+        <p>  
+        Implemented MVC pattern to manage information flow. Connected to the DataDragon API to pull item meta-data and images.
+        Integrated SortableJS library for core drag & drop functionality. Used jQuery for the remaining DOM-manipulation and interactivity.
+        </p>
+        <h1>Technologies:</h1>
+        <p>     
+            MVC design pattern, HTML5, CSS, JavaScript, jQuery, async/await, SortableJS
+        </p>
     </div>
 );
 
 const ModalP2 = () => (
-    <p>
-        Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-        commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-        ipsam atque a dolores quisquam quisquam adipisci possimus
-        laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-        accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-        reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-        deleniti rem!
+    <div className="modal-content-body">
+
+    <video id="video" loop="loop" controls preload="metadata">
+        <source src={algoVideo + '#t=0.5'} type="video/mp4"></source>
+    </video> 
+    
+    <div className="buttonRow"> 
+        <Button variant="primary">
+            Visit Project
+        </Button>
+        <Button variant="danger">
+            Source Code
+        </Button>
+    </div>
+    <hr></hr>
+
+    <h1>Description:</h1>
+    <p>     
+        Algo-Visual is an visual interactive playground for exploring two grid based algorithms:
+        
+        Flood-fill, and Cellular Automata Cave Generation
     </p>
+    <h1>Process:</h1>
+        <p>  
+        Designed and developed Algo-Visual as a responsive web app in React. 
+        Coded cellular automata cave generation, and floodfill algorithms in JavaScript. 
+        Saved time on styling by taking advantage of React Bootstrap components. 
+        State management was messy but functional — can be improved by refactoring with Redux or Hooks to reduce complexity and code scattering.
+        </p>
+    <h1>Technologies:</h1>
+    <p>     
+        React, JavaScript, HTML5, SCSS
+    </p>
+
+</div>
 );
 
 const ModalP3 = () => (
-    <p>
-        Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-        commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-        ipsam atque a dolores quisquam quisquam adipisci possimus
-        laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-        accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-        reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-        deleniti rem!
+    <div className="modal-content-body">
+
+    <video id="video" loop="loop" controls preload="metadata">
+        <source src={crwnVideo + '#t=0.5'} type="video/mp4"></source>
+
+    </video> 
+    {/* <ReactPlayer  className="videoPlayer" url={crwnVideo} light={crownThumb} playing controls loop /> */}
+    {/* style={vidStyle} */}
+    <div className="buttonRow"> 
+        <Button variant="primary">
+            Demo
+        </Button>
+        <Button variant="danger">
+            gitHub
+        </Button>
+    </div>
+    <hr></hr>
+
+    <h1>Description:</h1>
+    <p>     
+        Built a fullstack ecommerce app using React. 
+        Wrote clean, modular, and reusable code. 
     </p>
+    <h1>Process:</h1>
+        <p>  
+            Coded alongside Udemy course: <a href="https://www.udemy.com/course/complete-react-developer-zero-to-mastery/">Complete React Developer - Zero To Mastery</a>
+            <br/>
+
+            Implemented secure payment processing, user auth/OAuth, and NoSQL database, through Stripe and Firebase API. 
+            Studied and implemented several common state management patterns — Redux, Sagas, Hooks, Context-API, Apollo, and GraphQl.
+        </p>
+    <h1>Technologies:</h1>
+    <p>     
+        React, Redux, Sagas, Firebase/FireStore, Stripe, Heroku, Node.js, Express, GraphQL
+    </p>
+
+</div>
 );
 
 const Project = ({ num, video, bgImg, date, title, meta }) => {
@@ -76,6 +148,7 @@ const Project = ({ num, video, bgImg, date, title, meta }) => {
 
     return (
         <>
+    
             <article 
                 className="project" 
                 onClick={() => setShow(true)}

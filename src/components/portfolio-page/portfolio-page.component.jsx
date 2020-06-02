@@ -5,9 +5,9 @@ import "./portfolio-page.styles.scss"
 // import overlayImg from '../../img/col1.png'
 import Project from '../project/project.component'
 
-import algo from '../../img/algo.mp4'
-import lol from '../../img/lolsetrecording.mp4'
-
+// import algo from '../../img/algo.mp4'
+// import lol from '../../img/lolsetrecording.mp4'
+// import githubLogo from '../../img/GitHub-Mark-Light-64px.png'
 class PortfolioPage extends React.Component {
 
     
@@ -15,8 +15,12 @@ class PortfolioPage extends React.Component {
         
         return (
             <div className="portfolio-page">
-
-
+                    <div className="contact-info">
+                        {/* <a href="http://github.com/SeanMombo"><img src={githubLogo} alt="Sean Mombo Github Page"></img></a> */}
+                        {/* <p>sean@mombourquette.com</p>  */}
+                       
+                    </div>
+            
                 {/* <div className="portfolio-left">
                     
                     <div className="project-container">
@@ -31,15 +35,16 @@ class PortfolioPage extends React.Component {
                 {/* const meta1 = (Recreated as a <span>responsive web app</span>); */}
                 
                 <div className="portfolio-right">
+                    
                 <hr/>
                     <h1>Selected Works</h1>
                     <div className="project-container">
                         
-                        <Project num={1} bgImg={'bg1'} video={algo} date="November 2019" title="LoL Set Builder" meta=""/>
+                        <Project num={1} bgImg={'bg1'} date="November 2019" title="LoL Set Builder" meta=""/>
 
-                        <Project num={2} bgImg={'bg2'} video={lol} date="December 2019" title="Algo-Visual" meta="Engineered an interactive algorithm visualizer"/>
+                        <Project num={2} bgImg={'bg2'} date="December 2019" title="Algo-Visual" meta="Engineered an interactive algorithm visualizer"/>
 
-                        <Project num={3} bgImg={'bg3'} video={lol} title="CRWN CLOTHING" meta=""/> 
+                        <Project num={3} bgImg={'bg3'} title="CRWN CLOTHING" meta=""/> 
                         
                     </div>
                 </div>

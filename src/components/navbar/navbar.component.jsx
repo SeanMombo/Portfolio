@@ -3,6 +3,7 @@ import React from 'react';
 //     Link
 //   } from "react-router-dom";
 import "./navbar.styles.scss"
+import githubLogo from '../../img/GitHub-Mark-Light-32px.png'
 
 const Navbar = () => (
     <div className='navbar'>
@@ -16,9 +17,10 @@ const Navbar = () => (
         
         <div className='centerDiv'>
             {/* <a className="navButton name" href="/#">sean mombo</a>  */}
+            <a className="navButton" href="/#"><img src={githubLogo} alt="Sean Mombo Github Page"></img></a>
+            <a className="navButton" href="/#">games</a>
             <a className="navButton" href="/#">About</a>
             {/* <a className="navButton" href="/#">portfolio</a> */}
-            <a className="navButton" href="/#">games</a>
             <a className="navButton" href="/#">contact</a>
             <a className="navButton" href="/#">resume</a>
   

@@ -31,25 +31,23 @@
 
     max-width:1400px;
 
-    margin: 96px auto;
+    margin: 32px auto;
     
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
 
-    
-    
     @media screen and (max-width: 1000px) {
         height:100%;
-        margin: 16px auto;
+        margin: 24px auto;
         
     }
 
     @media screen and (max-width: 700px) {
         height:100%;
-        margin: 16px auto;
-        margin-top:32px;
+        margin: 0px auto;
+        // margin-top:32px;
     }
 
     img {
@@ -125,7 +123,7 @@
             font: 900 78px 'Spartan', sans-serif;
             letter-spacing: 0.03em;
             line-height: 1.2727272727em;
-            margin-bottom: 16px;
+            margin-bottom: 0px;
 
             .span1 {
                 font-weight: 200;
@@ -134,9 +132,15 @@
 
         h2 {
             color: $whiteCol;
-            font: 500 44px 'Solway', sans-serif;
+            font: 500 51px 'Solway', sans-serif;
+            margin-bottom:8px;
         }
-
+        h3 {
+            color: $whiteCol;
+            font: 500 30px 'Solway', sans-serif;
+            font-style: italic;
+            margin-bottom:8px;
+        }
         p {
             font: 400 22px 'Spartan', sans-serif;
             color: $whiteCol;
@@ -145,9 +149,16 @@
             font-style: italic;
             line-height: 1.4545454545em; 
             // text-align:left;
+            
+        }
+        .email {
+            margin-top:-8px;
+            margin-bottom: 0px;
+            font-style: normal;
         }
 
         .title-container {
+            padding-top:32px;
             height:100%;
         }
 
@@ -161,9 +172,9 @@
                 margin:0;
             }
             hr {
-                padding: 0;
-                margin:0;
-                visibility: hidden;
+                // padding: 0;
+                // margin:0;
+                // visibility: hidden;
             }
             h2 {
                 font-size: calc(60vw/10);
@@ -191,10 +202,10 @@
     
     hr {
         color: $whiteCol;
-        border-top:0px;
+        // border-top:0px;
         border-style: dashed;
         margin-bottom:32px;
-        opacity: 0.3;
+        opacity: 1;
         width:77%;
     }
 
