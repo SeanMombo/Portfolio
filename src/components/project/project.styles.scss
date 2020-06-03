@@ -317,6 +317,8 @@ video {
         border-color: black;
         border-top: 1px black solid;
         width:100%;
+        margin: 0;
+        margin-top:16px;
     }
 }
 
@@ -324,21 +326,27 @@ video {
     display:flex;
     justify-content: center;
     align-content: flex-end;
+    .close {
+        padding:16px;
+        width:55px;
+    }
 }
 
 .modal-title {
     color: $OrangeCol2;
-    font: 900 45px 'spartan', sans-serif;
+    font: 900 22px 'spartan', sans-serif;
     text-transform: uppercase;
-   
+
 }
 .project-modal {
     // width: 60%;
+    
     max-width:1400px;
     margin: 0 auto;
 }
 @media (min-width: 576px) {
     .modal-dialog {
+        
         max-width:1400px;
         margin: 1.75rem auto;
     }
@@ -347,7 +355,7 @@ video {
     opacity: 0.9;
 }
 .modal-open[style] {
-    padding-right: 0px !important;
+    padding: 0px !important;
 }
 
 .modal {
@@ -355,34 +363,36 @@ video {
 }
 
 .buttonRow {
+ margin: auto;
 
-}
+    
+    Button, a {
+        margin: 16px;
 
-Button {
-    margin: 16px 32px 0px 0px;
+        padding:16px;
+        font: 400 35px 'spartan', sans-serif;
+        text-transform: uppercase;
+        font-size: 20px !important;
+        // border-radius: 0px;
+        width:220px;
+        // border: 2px black solid;
+    }
+    .btn-primary, .btn-danger {
+        // border-radius: 0px;
+    }
+
+    .btn-outline-dark {
+        color: #fff !important;
+        background-color: #040405;
+        border-color: #040405;
+        // border-radius: 0px;
+    }
 
 
-    font: 900 45px 'spartan', sans-serif;
-
-    font-size: 20px !important;
-    border-radius: 0px;
-
-}
-.btn-primary, .btn-danger {
-    border-radius: 0px;
-}
-
-.btn-outline-dark {
-    color: #fff !important;
-    background-color: #040405;
-    border-color: #040405;
-    border-radius: 0px;
-}
-
-
-.btn-outline-dark:hover {
-    color: #040405;
-    background-color: #fff;
-    // border-color: #fff;
-    border-radius: 0px;
+    .btn-outline-dark:hover {
+        color: #040405;
+        background-color: #fff;
+        // border-color: #fff;
+        // border-radius: 0px;
+    }
 }

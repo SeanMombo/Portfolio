@@ -4,19 +4,10 @@ $w: 1270px;
 
 .portfolio-page {
   margin: 32px 0; 
-  // height: calc(100vh - 51px);
   height:100%;
-
-  // background: $OrangeCol2;
-
-  // background: $OrangeCol2 url(../../img/bigcanvasBackground16.png);
-  // image-rendering: pixelated;
-  // background-position: 50% 50%;
-  // background-size: 1792px;
-
-  // background-color: black;
-  // border: 8px $OrangeCol2 solid;
-  // border-top: 1px $yellowCol solid;
+  @media screen and (max-width: 1000px) {
+    margin: 0px 0; 
+  }
   
   hr {
     border-width: 2px;
@@ -42,6 +33,7 @@ $w: 1270px;
     
     @media screen and (max-width: 1000px) {
       text-align:center;
+
     }
   }
   .project-container {

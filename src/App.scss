@@ -44,6 +44,7 @@ html, body {
   font-size: 1rem;
   overflow-y: hidden;
   height:100%;
+
 }
 
 #myVideo {
@@ -64,7 +65,7 @@ body {
     image-rendering: -moz-crisp-edges;
     color: $whiteCol;
  
-    // padding: $gap1;
+    // padding: 8px;
     @media screen and (max-width: 650px) {
       padding: 0;
     }

@@ -30,10 +30,11 @@ const vidStyle = {
     height: '80%',
     margin: '0 auto'
 }
+
 const ModalP1 = ({ title }) => (
     <div className="modal-content-body">
 
-        <video id="video" loop="loop" controls preload="metadata">
+        <video id="video" loop="loop" controls preload="metadata" webkit-playsinline="true" playsinline="true" autoplay="true">
             <source src={lolVideo + '#t=0.5'} type="video/mp4"></source>
         </video> 
         
@@ -51,7 +52,7 @@ const ModalP1 = ({ title }) => (
         <p>     
             League of Legends is one of the most popular games in the world.
             Third party item-set builder web apps existed — but did not work on mobile. 
-            <br/><br/>The goal of this project was to fill this gap in mobile functionality. 
+            <br/>The goal of this project was to fill this gap in mobile functionality. 
         </p>
         <h1>Process:</h1>
         <p>  
@@ -68,7 +69,7 @@ const ModalP1 = ({ title }) => (
 const ModalP2 = () => (
     <div className="modal-content-body">
 
-    <video id="video" loop="loop" controls preload="metadata">
+    <video id="video" loop="loop" controls preload="metadata" webkit-playsinline="true" playsinline="true" autoplay="true">
         <source src={algoVideo + '#t=0.5'} type="video/mp4"></source>
     </video> 
     
@@ -106,18 +107,18 @@ const ModalP2 = () => (
 const ModalP3 = () => (
     <div className="modal-content-body">
 
-    <video id="video" loop="loop" controls preload="metadata">
+    <video id="video" loop="loop" controls preload="metadata" webkit-playsinline="true" playsinline="true" autoplay="true">
         <source src={crwnVideo + '#t=0.5'} type="video/mp4"></source>
 
     </video> 
     {/* <ReactPlayer  className="videoPlayer" url={crwnVideo} light={crownThumb} playing controls loop /> */}
     {/* style={vidStyle} */}
     <div className="buttonRow"> 
-        <Button variant="primary">
-            Demo
+        <Button variant="primary" >
+            Visit Project
         </Button>
-        <Button variant="danger">
-            gitHub
+        <Button variant="danger" href="https://github.com/SeanMombo/Algo-Interactive" target="_blank">
+            Source Code
         </Button>
     </div>
     <hr></hr>
@@ -148,7 +149,6 @@ const Project = ({ num, video, bgImg, date, title, meta }) => {
 
     return (
         <>
-    
             <article 
                 className="project" 
                 onClick={() => setShow(true)}
@@ -163,17 +163,10 @@ const Project = ({ num, video, bgImg, date, title, meta }) => {
                             {num === 1 ? (<P1/>) : num === 2 ? (<P2/>) : (<P3/>)}
                             
                         </div>
-                        {/* <div className="hover-hype-text">View Case Study</div> */}
                     </div>
-                    {/* <video id="video" autoplay="autoplay" loop="loop">
 
-                        <source src={video} type="video/mp4"></source>
-                    </video>  */}
-                    
                     <div className={`background ${bgImg}`}>
-                        {/* <img src={mockupShadow} alt='mockupshadow'/> */}
                     </div> 
-                    
                 </a>
             </article>
 

@@ -13,7 +13,7 @@ class MainPage extends React.Component {
         
             <div className='main-banner'>
                 
-                 {/* <div className='banner-header'>
+                {/* <div className='banner-header'>
                     <div class="logo-container">  
                         <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="400" height="408.79120879120876" viewBox="-300, -300, 1000, 1009">
 
@@ -23,7 +23,6 @@ class MainPage extends React.Component {
                     </div>
                 </div> */}
                 
-                    
                 <div class="main-banner-content">  
                 
                 {/* <br/><br/> */}
