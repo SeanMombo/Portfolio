@@ -219,7 +219,7 @@ $t: 0.3s;
         }
     }
 
-    &:hover{
+    body.hasHover &:hover{
         transform: translateY(-4px);
         box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.8);
 
@@ -402,7 +402,7 @@ video {
     }
 
 
-    .btn-outline-dark:hover {
+    body.hasHover .btn-outline-dark:hover {
         color: #040405;
         background-color: #fff;
         // border-color: #fff;
