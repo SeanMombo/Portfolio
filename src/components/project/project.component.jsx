@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Modal, Button} from 'react-bootstrap';
-import ReactPlayer from 'react-player';
+
 // import VideoThumbnail from 'react-video-thumbnail';
 
 import "./project.styles.scss"
@@ -8,7 +8,7 @@ import "./project.styles.scss"
 import lolVideo from '../../img/lolsetrecording.mp4';
 import algoVideo from '../../img/AlgoDemo2.mp4';
 import crwnVideo from '../../img/CrwnDemo.mp4';
-import crownThumb from '../../img/5.png';
+// import crownThumb from '../../img/5.png';
 
 
 const P1 = () => (
@@ -25,11 +25,11 @@ const P3 = () => (
     <p className="project-meta"> Built an <span className="spanPink">ecommerce app</span> as a Udemy course project. Expanded skillset into fullstack</p>
 )
 
-const vidStyle = {
-    width: '100%',
-    height: '80%',
-    margin: '0 auto'
-}
+// const vidStyle = {
+//     width: '100%',
+//     height: '80%',
+//     margin: '0 auto'
+// }
 
 const ModalP1 = ({ title }) => (
     <div className="modal-content-body">
@@ -150,11 +150,12 @@ const Project = ({ num, video, bgImg, date, title, meta }) => {
     return (
         <>
             <article 
+                tabindex="0"
                 className="project" 
                 onClick={() => setShow(true)}
                 >
                     
-                <a className={bgImg} href="#/">
+                <div className={bgImg + " aButton"} href="#/">
         
                     <div className="project-info-container">
                         <div className="project-info">
@@ -167,7 +168,7 @@ const Project = ({ num, video, bgImg, date, title, meta }) => {
 
                     <div className={`background ${bgImg}`}>
                     </div> 
-                </a>
+                </div>
             </article>
 
         <Modal 

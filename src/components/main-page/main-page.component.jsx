@@ -12,7 +12,6 @@ class MainPage extends React.Component {
         return (
         
             <div className='main-banner'>
-                
                 {/* <div className='banner-header'>
                     <div class="logo-container">  
                         <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="400" height="408.79120879120876" viewBox="-300, -300, 1000, 1009">
@@ -21,32 +20,38 @@ class MainPage extends React.Component {
                             stroke="none"  fill-rule="evenodd"></path></g>
                         </svg>
                     </div>
-                </div> */}
+                </div>
+                 */}
                 
                 <div class="main-banner-content">  
                 
                 {/* <br/><br/> */}
                     <div className="title-container">
-                    <p className="email">sean@mombourquette.com</p>
-                    <hr/>
+                    
                     {/* <img src={seanmombo}/> */}
                                          
-                    
-                    <h1>
-                        <span className='span1'>SEAN</span>MOMBO 
-                    </h1>
-                    
-                    {/* <hr/> */}
-                    
-                        <h2>
-                            — Frontend Developer —
-                        </h2>
+                        
                         {/* <h3>
                         & indie game entrepreneur
                         </h3> */}
                         
-                        <p>& indie game entrepreneur</p>
                         
+                        <h2>
+                        Fullstack Engineer
+                    </h2>
+                    {/* <p>& indie game entrepreneur</p><hr/> */}
+               
+                    <h1>
+                        <span className='span1'>SEAN</span>MOMBO 
+                    </h1>
+                    
+                   
+                    
+                    <p className="email">sean@mombourquette.com</p>
+                    
+                   
+                    {/* <hr/> */}
+
                     </div>
                     
                 </div>

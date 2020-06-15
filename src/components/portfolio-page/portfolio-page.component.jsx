@@ -10,6 +10,22 @@ import Project from '../project/project.component'
 // import githubLogo from '../../img/GitHub-Mark-Light-64px.png'
 class PortfolioPage extends React.Component {
 
+    componentDidMount() {
+        // Get the input field
+        Array.from(document.getElementsByClassName("project")).forEach( input => {
+            // Execute a function when the user releases a key on the keyboard
+            input.addEventListener("keyup", function(event) {
+            // Number 13 is the "Enter" key on the keyboard
+            if (event.keyCode === 13) {
+                // Cancel the default action, if needed
+                event.preventDefault();
+                // Trigger the button element with a click
+                input.click();
+            }
+            });
+        })
+
+    }
     
     render () {
         
@@ -36,8 +52,8 @@ class PortfolioPage extends React.Component {
                 
                 <div className="portfolio-right">
                     
-                <hr/>
-                    <h1>Selected Works</h1>
+                {/* <hr/> */}
+                    {/* <h1>Selected Works</h1> */}
                     <div className="project-container">
                         
                         <Project num={1} bgImg={'bg1'} date="November 2019" title="LoL Set Builder" meta=""/>
