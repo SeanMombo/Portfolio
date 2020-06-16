@@ -22,7 +22,9 @@ const GamesModal = () => (
 
 const AboutModal = () => (
     <div className="gameContainer">
-        under construction
+        I'm Sean! I graduated with a Bachelors in Computing last april from Queen's University.
+
+        
     </div>
 );
 
