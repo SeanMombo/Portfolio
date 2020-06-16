@@ -1,22 +1,20 @@
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 // import logo from './logo.svg';
-import './App.scss';
 
+import './assets/bootstrap.min.css';
+import './App.scss';
 // import { BrowserRouter as Router,
 //   Switch,
 //   Route,
 //   Link} from 'react-router-dom'
 
-import MainPage from './components/main-page/main-page.component';
-import PortfolioPage from './components/portfolio-page/portfolio-page.component'
-import Navbar from './components/navbar/navbar.component'
+import MainPage from './Components/main-page/main-page.component';
+import Navbar from './Components/navbar/navbar.component'
+const PortfolioPage = lazy(() => import('./Components/portfolio-page/portfolio-page.component'));
 // import ProjectModal from './components/project-modal/project-modal.component'
 
 function watchForHover() {
-  // lastTouchTime is used for ignoring emulated mousemove events
-  // that are fired after touchstart events. Since they're
-  // indistinguishable from real events, we use the fact that they're
-  // fired a few milliseconds after touchstart to filter them.
+
   let lastTouchTime = 0
 
   function enableHover() {
@@ -53,29 +51,10 @@ class App extends React.Component {
         <br/>
    
         <MainPage/>
+        <Suspense fallback={<div>...loading</div>}>
         <PortfolioPage/>
-        
-        {/* <Router>
-          <Navbar/>
-
-        
-          <Switch>
-            <Route path="/about">
-              <div></div>
-            </Route>
-            
-            <Route path="/portfolio">
-              <PortfolioPage/>
-            </Route>
-
-            <Route path="/">
-              <MainPage/>
-              <PortfolioPage/>
-            </Route>
-          </Switch>
-
-        </Router> */}
-
+        </Suspense>
+       
       </div>
     );
   }
