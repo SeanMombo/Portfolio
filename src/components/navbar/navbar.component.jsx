@@ -5,7 +5,7 @@ import {Modal} from 'react-bootstrap';
 //     Link
 //   } from "react-router-dom";
 import "./navbar.styles.scss"
-import githubLogo from '../../img/GitHub-Mark-Light-32px.png'
+import githubLogo from '../../img/small-github.png'
 import SeanMomboResume from '../../assets/SeanMombourquetteResume.pdf';
 
 import dieBanner from '../../img/DieAloneHero.jpg';
