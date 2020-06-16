@@ -24,7 +24,7 @@ const AboutModal = () => (
     <div className="gameContainer">
         I'm Sean! I graduated with a Bachelors in Computing last april from Queen's University.
 
-        
+        I've always been passionate about academics — but not the academic system. School made me feel like a racecar stuck in traffic.
     </div>
 );
 
