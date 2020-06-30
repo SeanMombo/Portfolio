@@ -39,12 +39,17 @@ const ModalP1 = ({ title }) => (
         </video> 
         
         <div className="buttonRow"> 
-            <Button variant="primary">
-                Visit Project
-            </Button>
-            <Button variant="danger">
-                Source Code
-            </Button>
+            <a href="http://seanmombo.com/lolsetbuilder/" target="_blank" rel='noopener noreferrer'>
+                <Button variant="primary">
+                    Visit Project
+                </Button>
+            </a>
+            
+            <a href="https://github.com/SeanMombo/LoLItemBuilder" target="_blank" rel='noopener noreferrer'>
+                <Button variant="danger">
+                    Source Code
+                </Button>
+            </a>
         </div>
         <hr></hr>
 
@@ -74,12 +79,17 @@ const ModalP2 = () => (
     </video> 
     
     <div className="buttonRow"> 
-        <Button variant="primary">
-            Visit Project
-        </Button>
-        <Button variant="danger">
-            Source Code
-        </Button>
+            <a href="http://seanmombo.com/Algo-Visual/" target="_blank" rel='noopener noreferrer'>
+                <Button variant="primary">
+                    Visit Project
+                </Button>
+            </a>
+            
+            <a href="https://github.com/SeanMombo/Algo-Interactive" target="_blank" rel='noopener noreferrer'>
+                <Button variant="danger">
+                    Source Code
+                </Button>
+            </a>
     </div>
     <hr></hr>
 
@@ -114,12 +124,17 @@ const ModalP3 = () => (
     {/* <ReactPlayer  className="videoPlayer" url={crwnVideo} light={crownThumb} playing controls loop /> */}
     {/* style={vidStyle} */}
     <div className="buttonRow"> 
-        <Button variant="primary" >
-            Visit Project
-        </Button>
-        <Button variant="danger" href="https://github.com/SeanMombo/Algo-Interactive" target="_blank">
-            Source Code
-        </Button>
+            <a href="https://crwn-mombo.herokuapp.com/" target="_blank" rel='noopener noreferrer'>
+                <Button variant="primary">
+                    Visit Project
+                </Button>
+            </a>
+            
+            <a href="https://github.com/SeanMombo/eCommerceReact" target="_blank" rel='noopener noreferrer'>
+                <Button variant="danger">
+                    Source Code
+                </Button>
+            </a>
     </div>
     <hr></hr>
 

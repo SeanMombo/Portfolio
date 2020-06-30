@@ -234,7 +234,7 @@ $t: 0.3s;
     body.hasHover &:hover{
         transform: translateY(-8px);
         box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.8);
-
+        cursor: pointer;
         .background {
             @media screen and (min-width: 1000px) {
                 &.bg1, &.bg2 {
@@ -409,6 +409,9 @@ video {
         // border-radius: 0px;
         width:220px;
         // border: 2px black solid;
+
+        
+        
     }
     .btn-primary, .btn-danger {
         // border-radius: 0px;
