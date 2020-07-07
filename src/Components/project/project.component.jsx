@@ -39,7 +39,7 @@ const ModalP1 = ({ title }) => (
         </video> 
         
         <div className="buttonRow"> 
-            <a href="http://seanmombo.com/lolsetbuilder/" target="_blank" rel='noopener noreferrer'>
+            <a href="http://seanmombo.com/lolsetbuilder/index" target="_blank" rel='noopener noreferrer'>
                 <Button variant="primary">
                     Visit Project
                 </Button>
